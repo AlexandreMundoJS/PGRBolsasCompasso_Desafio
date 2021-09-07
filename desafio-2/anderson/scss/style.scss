@@ -1,0 +1,57 @@
+.header {
+    height: 50px;
+    width: 100%;
+    background-color: rgb(207, 92, 207, .4);
+    display: flex;
+    font-family: sans-serif;
+
+    .brand {
+        display: flex;
+        align-items: center;
+        width: 50%;
+
+        h1 {
+            font-size: 22px; 
+            color: white;
+            text-transform: uppercase;
+            margin-left: 10%;
+        }
+    }
+
+    .social-media {
+        display: flex;
+        position: relative;
+        width: 50%;
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 100%;
+            justify-content: space-evenly;
+            
+
+            li {
+
+                i {
+                    font-size: 30px;
+                }  
+                .face {
+                    color: #1877f2;
+                }    
+                .tt {
+                    color: rgb(29, 155, 240);
+                }
+                .insta {
+                    color: #C13584;
+                }
+                .linkedin {
+                    color: #0A66C2;
+                }
+                .github {
+                    color: black;
+                }
+            }
+        }
+    }
+}

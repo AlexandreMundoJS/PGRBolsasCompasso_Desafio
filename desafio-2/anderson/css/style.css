@@ -1,0 +1,50 @@
+.header {
+  height: 50px;
+  width: 100%;
+  background-color: rgba(207, 92, 207, 0.4);
+  display: flex;
+  font-family: sans-serif;
+}
+.header .brand {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+.header .brand h1 {
+  font-size: 22px;
+  color: white;
+  text-transform: uppercase;
+  margin-left: 10%;
+}
+.header .social-media {
+  display: flex;
+  position: relative;
+  width: 50%;
+}
+.header .social-media ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: space-evenly;
+}
+.header .social-media ul li i {
+  font-size: 30px;
+}
+.header .social-media ul li .face {
+  color: #1877f2;
+}
+.header .social-media ul li .tt {
+  color: #1d9bf0;
+}
+.header .social-media ul li .insta {
+  color: #C13584;
+}
+.header .social-media ul li .linkedin {
+  color: #0A66C2;
+}
+.header .social-media ul li .github {
+  color: black;
+}
+
+/*# sourceMappingURL=style.css.map */
