@@ -2,6 +2,7 @@ body {
   background-color: #FFFFFF;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
+  width: 100%;
 }
 body .header {
   height: 100px;
@@ -28,7 +29,6 @@ body .header .social-media {
 }
 body .header .social-media ul {
   display: flex;
-  flex-direction: row;
   align-items: center;
   width: 100%;
   justify-content: space-evenly;
@@ -66,11 +66,15 @@ body .header .social-media ul li .github {
 body .header .social-media ul li .github:hover {
   color: red;
 }
+body .introduction-section {
+  display: flex;
+  justify-content: center;
+}
 body .introduction-section .introduction {
   display: flex;
+  align-items: center;
   padding: 20px;
-  width: 70%;
-  margin-left: 15%;
+  width: 80%;
   margin-top: 5%;
   border-radius: 4px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
@@ -104,7 +108,7 @@ body .introduction-section .introduction .introduction-content p {
   line-height: 26px;
 }
 body .skills-title {
-  margin-top: 25%;
+  margin-top: 15%;
   font-size: 36px;
   text-transform: uppercase;
   text-align: center;
@@ -121,6 +125,7 @@ body .container .skills-ul {
 body .container .skills-ul ul {
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 body .container .skills-ul ul li {
   font-size: 16px;
@@ -138,6 +143,28 @@ body .container .skills-ul ul li #english {
   color: #04C2C9;
   font-size: 80px;
   margin-left: 20%;
+}
+body .technologies .ul-1 {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+body .technologies .ul-1 li {
+  margin-top: 5%;
+  width: auto;
+}
+body .technologies .ul-2 {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+body .technologies .ul-2 li {
+  margin-top: 5%;
+  width: auto;
 }
 
 @media (max-width: 420px) {
