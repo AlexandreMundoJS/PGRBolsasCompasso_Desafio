@@ -1,5 +1,5 @@
 body {
-  background-color: lightgray;
+  background-color: #FFFFFF;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
 }
@@ -65,6 +65,94 @@ body .header .social-media ul li .github {
 }
 body .header .social-media ul li .github:hover {
   color: red;
+}
+body .introduction-section .introduction {
+  display: flex;
+  padding: 20px;
+  width: 70%;
+  margin-left: 15%;
+  margin-top: 5%;
+  border-radius: 4px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+body .introduction-section .introduction:hover {
+  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.5);
+}
+body .introduction-section .introduction .introduction-img {
+  flex-basis: 250px;
+  flex-shrink: 2;
+  margin-left: 5%;
+}
+body .introduction-section .introduction img {
+  max-width: 100%;
+}
+body .introduction-section .introduction .introduction-content {
+  margin-left: 5%;
+  margin-top: 0px;
+  width: 40%;
+}
+body .introduction-section .introduction .introduction-content h2 {
+  margin-top: 2%;
+  font-size: 36px;
+  text-align: justify;
+}
+body .introduction-section .introduction .introduction-content p {
+  padding: 10px 0 0;
+  margin-top: 2%;
+  font-size: 18px;
+  word-spacing: 2px;
+  line-height: 26px;
+}
+body .skills-title {
+  margin-top: 25%;
+  font-size: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+}
+body .container {
+  margin-top: 4%;
+  width: 100%;
+}
+body .container .skills-ul {
+  width: 100%;
+  margin-top: 5%;
+}
+body .container .skills-ul ul {
+  display: flex;
+  justify-content: space-around;
+}
+body .container .skills-ul ul li {
+  font-size: 16px;
+}
+body .container .skills-ul ul li p {
+  color: #6c757d;
+  margin-top: 15%;
+}
+body .container .skills-ul ul li #teamwork {
+  color: #04C2C9;
+  font-size: 80px;
+  margin-left: 20%;
+}
+body .container .skills-ul ul li #english {
+  color: #04C2C9;
+  font-size: 80px;
+  margin-left: 20%;
+}
+
+@media (max-width: 420px) {
+  .introduction {
+    flex-direction: column;
+    width: 70%;
+  }
+  .introduction .introduction-content {
+    margin-top: 0;
+    padding: 0;
+  }
+  .introduction .introduction-content h2 {
+    margin-left: 5%;
+    font-size: 22px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

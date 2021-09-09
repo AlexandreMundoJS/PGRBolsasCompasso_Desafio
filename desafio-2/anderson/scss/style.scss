@@ -1,90 +1,88 @@
-    body {
-        background-color: lightgray;
-        box-sizing: border-box;
-        font-family: 'Montserrat', sans-serif;
-    
-        .header {
-            height: 100px;
-            width: 100%;
-            background-color: black;// rgb(207, 92, 207, .4);
+body {
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+
+    .header {
+        height: 100px;
+        width: 100%;
+        background-color: black;// rgb(207, 92, 207, .4);
+        display: flex;
+        font-family: sans-serif;
+
+        .brand {
             display: flex;
-            font-family: sans-serif;
+            align-items: center;
+            width: 50%;
 
-            .brand {
-                display: flex;
-                align-items: center;
-                width: 50%;
-
-                h1 {
-                    font-size: 22px; 
-                    color: white;
-                    text-transform: uppercase;
-                    margin-left: 10%;
-                }
+            h1 {
+                font-size: 22px; 
+                color: white;
+                text-transform: uppercase;
+                margin-left: 10%;
             }
+        }
 
-            .social-media {
+        .social-media {
+            display: flex;
+            position: relative;
+            width: 50%;
+
+            ul {
                 display: flex;
-                position: relative;
-                width: 50%;
+                flex-direction: row;
+                align-items: center;
+                width: 100%;
+                justify-content: space-evenly;
+                
 
-                ul {
-                    display: flex;
-                    flex-direction: row;
-                    align-items: center;
-                    width: 100%;
-                    justify-content: space-evenly;
-                    
+                li {
 
-                    li {
+                    i {
+                        font-size: 30px;
+                    }  
 
-                        i {
-                            font-size: 30px;
-                        }  
+                    .face {
+                        color: #1877f2;
 
-                        .face {
-                            color: #1877f2;
+                            &:hover {
+                                color: red;
+                            }                            
+                    }    
 
-                                &:hover {
-                                    color: red;
-                                }                            
+                    .tt {
+                        color: rgb(29, 155, 240);
+
+                        &:hover {
+                            color: red;
                         }    
+                            
+                    }
 
-                        .tt {
-                            color: rgb(29, 155, 240);
+                    .insta {
+                        color: #C13584;
 
-                            &:hover {
-                                color: red;
-                            }    
-                              
-                        }
+                        &:hover {
+                            color: red;
+                        }      
 
-                        .insta {
-                            color: #C13584;
+                    }
 
-                            &:hover {
-                                color: red;
-                            }      
+                    .linkedin {
+                        color: #0A66C2;
 
-                        }
+                        &:hover {
+                            color: red;
+                        }     
 
-                        .linkedin {
-                            color: #0A66C2;
+                    }
 
-                            &:hover {
-                                color: red;
-                            }     
+                    .github {
+                        color: white;
 
-                        }
-
-                        .github {
-                            color: white;
-
-                            &:hover {
-                                color: red;
-                            }      
-
-                        }
+                        &:hover {
+                            color: red;
+                        }      
 
                     }
 
@@ -93,5 +91,76 @@
             }
 
         }
+
     }
+    
+    .introduction-section{
+        .introduction {
+            display: flex;
+            padding: 20px;
+            width: 70%;
+            margin-left: 15%;
+            margin-top: 5%;
+            border-radius: 4px;
+            box-shadow: 0 5px 15px rgba(0,0,0,.5);
+
+                &:hover {
+                    box-shadow: 0px 20px 30px rgba(0,0,0,.5);
+                }
+        
+            .introduction-img {
+                flex-basis: 250px;
+                flex-shrink: 2;
+                margin-left: 5%;
+            }
+                img {
+                    max-width: 100%;
+                }
+
+            .introduction-content {
+                margin-left: 5%;
+                margin-top: 0px;
+                width: 40%;
+
+                h2 {
+                    margin-top: 2%;
+                    font-size: 36px;
+                    text-align: justify;
+                }
+
+                p {
+                    padding: 10px 0 0;
+                    margin-top: 2%;
+                    font-size: 18px;
+                    word-spacing: 2px;
+                    line-height: 26px;
+                }
+            }
+        }
+    }
+
+
+    
+
+}       
+
+
+
+
+@media (max-width: 420px) {
+    .introduction {
+        flex-direction: column;
+        width: 70%;
+
+        .introduction-content {
+            margin-top: 0;                  
+            padding: 0;      
+
+            h2 {      
+                margin-left: 5%;
+                font-size: 22px;
+            }
+        }
+    }
+}
 
