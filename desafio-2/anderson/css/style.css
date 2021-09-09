@@ -1,50 +1,70 @@
-.header {
-  height: 50px;
+body {
+  background-color: lightgray;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+body .header {
+  height: 100px;
   width: 100%;
-  background-color: rgba(207, 92, 207, 0.4);
+  background-color: black;
   display: flex;
   font-family: sans-serif;
 }
-.header .brand {
+body .header .brand {
   display: flex;
   align-items: center;
   width: 50%;
 }
-.header .brand h1 {
+body .header .brand h1 {
   font-size: 22px;
   color: white;
   text-transform: uppercase;
   margin-left: 10%;
 }
-.header .social-media {
+body .header .social-media {
   display: flex;
   position: relative;
   width: 50%;
 }
-.header .social-media ul {
+body .header .social-media ul {
   display: flex;
   flex-direction: row;
   align-items: center;
   width: 100%;
   justify-content: space-evenly;
 }
-.header .social-media ul li i {
+body .header .social-media ul li i {
   font-size: 30px;
 }
-.header .social-media ul li .face {
+body .header .social-media ul li .face {
   color: #1877f2;
 }
-.header .social-media ul li .tt {
+body .header .social-media ul li .face:hover {
+  color: red;
+}
+body .header .social-media ul li .tt {
   color: #1d9bf0;
 }
-.header .social-media ul li .insta {
+body .header .social-media ul li .tt:hover {
+  color: red;
+}
+body .header .social-media ul li .insta {
   color: #C13584;
 }
-.header .social-media ul li .linkedin {
+body .header .social-media ul li .insta:hover {
+  color: red;
+}
+body .header .social-media ul li .linkedin {
   color: #0A66C2;
 }
-.header .social-media ul li .github {
-  color: black;
+body .header .social-media ul li .linkedin:hover {
+  color: red;
+}
+body .header .social-media ul li .github {
+  color: white;
+}
+body .header .social-media ul li .github:hover {
+  color: red;
 }
 
 /*# sourceMappingURL=style.css.map */
