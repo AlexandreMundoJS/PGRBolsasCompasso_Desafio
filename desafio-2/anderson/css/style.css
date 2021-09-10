@@ -4,6 +4,10 @@ body {
   font-family: "Montserrat", sans-serif;
   width: 100%;
 }
+body .responsive {
+  width: 100%;
+  height: auto;
+}
 body .header {
   height: 100px;
   width: 100%;
@@ -17,7 +21,7 @@ body .header .brand {
   width: 50%;
 }
 body .header .brand h1 {
-  font-size: 22px;
+  font-size: 1.5vw;
   color: white;
   text-transform: uppercase;
   margin-left: 10%;
@@ -34,7 +38,7 @@ body .header .social-media ul {
   justify-content: space-evenly;
 }
 body .header .social-media ul li i {
-  font-size: 30px;
+  font-size: 2vw;
 }
 body .header .social-media ul li .face {
   color: #1877f2;
@@ -97,51 +101,51 @@ body .introduction-section .introduction .introduction-content {
 }
 body .introduction-section .introduction .introduction-content h2 {
   margin-top: 2%;
-  font-size: 36px;
+  font-size: 1.5vw;
   text-align: justify;
 }
 body .introduction-section .introduction .introduction-content p {
   padding: 10px 0 0;
   margin-top: 2%;
-  font-size: 18px;
+  font-size: 1vw;
   word-spacing: 2px;
-  line-height: 26px;
+  line-height: 1vw;
 }
-body .skills-title {
+body .section-title {
   margin-top: 15%;
-  font-size: 36px;
+  font-size: 2.5vw;
   text-transform: uppercase;
   text-align: center;
   font-weight: bold;
 }
-body .container {
+body .section-1 {
   margin-top: 4%;
   width: 100%;
 }
-body .container .skills-ul {
+body .section-1 .skills-ul {
   width: 100%;
   margin-top: 5%;
 }
-body .container .skills-ul ul {
+body .section-1 .skills-ul ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-body .container .skills-ul ul li {
-  font-size: 16px;
+body .section-1 .skills-ul ul li {
+  font-size: 1vw;
 }
-body .container .skills-ul ul li p {
+body .section-1 .skills-ul ul li p {
   color: #6c757d;
   margin-top: 15%;
 }
-body .container .skills-ul ul li #teamwork {
+body .section-1 .skills-ul ul li #teamwork {
   color: #04C2C9;
-  font-size: 80px;
+  font-size: 5.5vw;
   margin-left: 20%;
 }
-body .container .skills-ul ul li #english {
+body .section-1 .skills-ul ul li #english {
   color: #04C2C9;
-  font-size: 80px;
+  font-size: 5.5vw;
   margin-left: 20%;
 }
 body .technologies .ul-1 {
@@ -153,7 +157,6 @@ body .technologies .ul-1 {
 }
 body .technologies .ul-1 li {
   margin-top: 5%;
-  width: auto;
 }
 body .technologies .ul-2 {
   width: 100%;
@@ -164,21 +167,55 @@ body .technologies .ul-2 {
 }
 body .technologies .ul-2 li {
   margin-top: 5%;
-  width: auto;
 }
-
-@media (max-width: 420px) {
-  .introduction {
+body .section-3 {
+  width: 100%;
+  margin-top: 5%;
+}
+body .section-3 h2 {
+  font-size: 2.5vw;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 400;
+}
+body .section-3 .cards {
+  margin-top: 4%;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+body .section-3 .cards .card {
+  width: 15%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 4px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  height: auto;
+  padding: 10px;
+  margin-bottom: 10px;
+  background: #fdfdfd;
+}
+body .section-3 .cards .card h2 {
+  font-size: 1.5vw;
+  font-weight: 400;
+  width: 100%;
+  text-align: center;
+  margin-top: 5%;
+}
+body .section-3 .cards .card p {
+  font-size: 1vw;
+  text-align: center;
+  width: 80%;
+  margin-top: 5%;
+}
+body .section-3 .cards .card .btn-div {
+  margin-top: 50%;
+}
+@media (max-width: 720px) {
+  .cards {
     flex-direction: column;
-    width: 70%;
-  }
-  .introduction .introduction-content {
-    margin-top: 0;
-    padding: 0;
-  }
-  .introduction .introduction-content h2 {
-    margin-left: 5%;
-    font-size: 22px;
   }
 }
 
