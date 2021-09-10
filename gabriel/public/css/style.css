@@ -7,13 +7,15 @@ html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acro
 }
 
 body {
+  background-color: #57565b;
   background-image: url("../images/wallpapper.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  height: 100%;
 }
 
-body, html {
+body {
   height: 100%;
   margin: 0;
 }
@@ -76,7 +78,54 @@ footer li {
   float: left;
 }
 
-footer li a {
-  display: inline !important;
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.effect {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: #212529;
+}
+
+.effect:hover {
+  color: #d1d1d1;
+  border-radius: 50%;
+}
+
+.effect:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #3d3d40;
+  border-radius: 50%;
+  z-index: -1;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.effect:hover:before {
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 /*# sourceMappingURL=style.css.map */

@@ -6,6 +6,7 @@ html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acro
   font: inherit;
 }
 body {
+  background-color: #57565b;
   background-image: url("../images/wallpapper.jpg");
   background-repeat:no-repeat;
   -webkit-background-size:cover;
@@ -13,9 +14,10 @@ body {
   -o-background-size:cover;
   background-size:cover;
   background-position:center;
+  height: 100%;
 }
 
-body , html {
+body {
   height: 100%;
   margin: 0;
 }
@@ -90,10 +92,12 @@ body , html {
   margin-bottom: 10px;
   color: white;
 }
+
 footer ul{
   list-style-type: none;
   display: inline !important;
 }
+
 footer li{
   margin: 40px;
   color: white;
@@ -101,8 +105,41 @@ footer li{
   
 }
 
-footer li a {
-  display: inline !important;
+ul {
+  display: flex;
 }
 
 
+.effect {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  transition: 0.5s;
+  color: #212529;
+
+}
+.effect:hover{
+  color: #d1d1d1;
+  border-radius: 50%;
+}
+.effect:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #3d3d40;
+  border-radius: 50%;
+  z-index: -1;
+  transform: scale(0);
+  transition: 0.5s;
+
+}
+.effect:hover:before{
+  transform: scale(1);
+}
