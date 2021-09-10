@@ -5,7 +5,7 @@ html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acro
   font-size: 100%;
   font: inherit;
 }
-body {
+#landing {
   background-color: #57565b;
   background-image: url("../images/wallpapper.jpg");
   background-repeat:no-repeat;
@@ -15,13 +15,13 @@ body {
   background-size:cover;
   background-position:center;
   height: 100%;
+  margin: 0;
 }
-
-body {
+#pages{
+  background-color: #57565b;
   height: 100%;
   margin: 0;
 }
-
 // .bg-image {
 //   background-image: url("../images/wallpapper.jpg");
 //   filter: blur(1px);
@@ -64,11 +64,6 @@ body {
   margin-bottom: 200px;
 
 }
-
-// .text-body{
-//   margin-left: -245px;
-// }
-
 .presentation h3 {
   font-size: 30px;
   color: white;
@@ -142,4 +137,17 @@ ul {
 }
 .effect:hover:before{
   transform: scale(1);
+}
+
+.about h2 {
+  color: white;
+  text-align: left;
+  font-size: 4rem;
+
+}
+
+.about p {
+  color: white;
+  text-align: left;
+  font-size: 1.5rem;
 }

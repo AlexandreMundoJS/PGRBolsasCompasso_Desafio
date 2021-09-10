@@ -6,16 +6,18 @@ html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acro
   font: inherit;
 }
 
-body {
+#landing {
   background-color: #57565b;
   background-image: url("../images/wallpapper.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 100%;
+  margin: 0;
 }
 
-body {
+#pages {
+  background-color: #57565b;
   height: 100%;
   margin: 0;
 }
@@ -127,5 +129,17 @@ ul {
 .effect:hover:before {
   -webkit-transform: scale(1);
           transform: scale(1);
+}
+
+.about h2 {
+  color: white;
+  text-align: left;
+  font-size: 4rem;
+}
+
+.about p {
+  color: white;
+  text-align: left;
+  font-size: 1.5rem;
 }
 /*# sourceMappingURL=style.css.map */
