@@ -48,6 +48,7 @@ html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acro
   border-radius: 15px;
   padding-top: 20px;
   padding-bottom: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .photo {
@@ -61,7 +62,7 @@ html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acro
 .content {
 
   margin-top: 200px;
-  margin-bottom: 200px;
+  margin-bottom: auto;
 
 }
 .presentation h3 {
@@ -100,7 +101,7 @@ footer li{
   
 }
 
-ul {
+footer ul {
   display: flex;
 }
 
@@ -149,5 +150,29 @@ ul {
 .about p {
   color: white;
   text-align: left;
+  font-size: 1.5rem;
+}
+
+.techs {
+  color: white;
+  text-align: left;
+  
+}
+
+.line-but-smaller {
+  width: 200px;
+  border-bottom: 1px solid white;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.techs ul {
+  list-style: none;
+}
+
+.techs li {
+  margin-top: 10px;
+  margin-bottom: 10px;
   font-size: 1.5rem;
 }
