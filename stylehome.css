@@ -9,3 +9,21 @@
 .box {
     text-align: center;
 }
+
+nav {
+    text-align: center;
+    padding: 15px;
+   
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 20px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+}
