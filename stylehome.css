@@ -14,6 +14,12 @@ header {
     text-align: center;
 }
 
+input[type=checkbox] {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+
 nav {
     text-align: center;
     padding: 15px;
