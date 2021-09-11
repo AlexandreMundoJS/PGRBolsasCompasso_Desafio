@@ -20,6 +20,17 @@ input[type=checkbox] {
     visibility: hidden;
 }
 
+label {
+	cursor: pointer;
+	text-indent: -9999px;
+	width: 52px;
+	height: 27px;
+	background: grey;
+	float: right;
+	border-radius: 100px;
+	position: relative;
+}
+
 nav {
     text-align: center;
     padding: 15px;
