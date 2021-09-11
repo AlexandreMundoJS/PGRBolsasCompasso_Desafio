@@ -7,3 +7,10 @@ const coresIniciais = {
     corTexto: window.getComputedStyle(html).getPropertyValue("--cortexto"),
     header: window.getComputedStyle(html).getPropertyValue("--header"),
 }
+
+const darkMode = {
+    background: "#000000",
+    corTitulo: "#cacaca",
+    corTexto: "#cacaca",
+    header: "#202020",
+}
