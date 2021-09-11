@@ -5,8 +5,12 @@ html {
     --header: #000000;
 }
 
+body {
+    background-color: var(--background);
+}
+
 header {
-    background: black;
+    background: var(--header);
 }
 
 .imagem {
@@ -19,6 +23,14 @@ header {
 
 .box {
     text-align: center;
+}
+
+body p {
+    color: var(--cortexto);
+}
+
+body h2 {
+    color: var(--cortitulo);
 }
 
 input[type=checkbox] {
