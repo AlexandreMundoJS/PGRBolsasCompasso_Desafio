@@ -1,0 +1,7 @@
+.imagem {
+    border-color: rgb(0, 0, 0);
+    border-width: 0;
+    border-style: solid;
+    border-radius: 180px;
+    padding: 15px;
+}
