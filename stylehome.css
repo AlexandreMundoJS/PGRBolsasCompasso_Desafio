@@ -62,6 +62,19 @@ label:after {
 	transition: 0.3s;
 }
 
+input:checked + label {
+    background: var(--background);
+}
+
+input:checked + label:after {
+    left: calc(100% - 5px);
+    transform: translateX(-100%);
+}
+
+label:active:active {
+    width: 45px;
+}
+
 
 nav {
     text-align: center;
