@@ -4,3 +4,101 @@ html {
     --cortexto: #333333;
     --header: #000000;
 }
+
+body {
+    background-color: var(--background);
+}
+
+header {
+    background: var(--header);
+}
+
+.imagem {
+    border-color: rgb(0, 0, 0);
+    border-width: 0;
+    border-style: solid;
+    border-radius: 180px;
+    padding: 15px;
+}
+
+.box {
+    text-align: center;
+}
+
+body p {
+    color: var(--cortexto);
+}
+
+body h2 {
+    color: var(--cortitulo);
+}
+
+input[type=checkbox] {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+
+label {
+	cursor: pointer;
+	text-indent: -9999px;
+	width: 52px;
+	height: 27px;
+	background: grey;
+	float: right;
+	border-radius: 100px;
+	position: relative;
+}
+
+label:after {
+	content: '';
+	position: absolute;
+	top: 3px;
+	left: 3px;
+	width: 20px;
+	height: 20px;
+	background: #fff;
+	border-radius: 90px;
+	transition: 0.3s;
+}
+
+input:checked + label {
+    background: var(--background);
+}
+
+input:checked + label:after {
+    left: calc(100% - 5px);
+    transform: translateX(-100%);
+}
+
+label:active:active {
+    width: 45px;
+}
+
+
+nav {
+    text-align: center;
+    padding: 15px;
+   
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 20px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: gold;
+    font-size: 28px;
+}
+
+nav a:active {
+    color: darkgoldenrod;
+}
