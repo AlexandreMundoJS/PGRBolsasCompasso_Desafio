@@ -14,3 +14,5 @@ const darkMode = {
     corTexto: "#cacaca",
     header: "#202020",
 }
+
+const transformKey = key => "--" + key.replace(/[(A-Z)]/, "t").toLowerCase()
