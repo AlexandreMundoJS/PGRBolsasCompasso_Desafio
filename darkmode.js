@@ -16,3 +16,14 @@ const darkMode = {
 }
 
 const transformKey = key => "--" + key.replace(/[(A-Z)]/, "t").toLowerCase()
+
+const changeColors = (colors) => {
+    Object.keys(colors).map(key => 
+        html.style.setProperty(transformKey(key), colors[key])   
+    )
+}
+
+
+checkbox.addEventListener("change", ({target}) => {
+    target.checked ? changeColors(darkMode) : changeColors(coresIniciais)
+})
