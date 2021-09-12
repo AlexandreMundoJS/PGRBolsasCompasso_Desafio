@@ -21,6 +21,33 @@ header {
     padding: 15px;
 }
 
+nav {
+    text-align: center;
+    padding: 15px;
+   
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 20px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: gold;
+    font-size: 28px;
+}
+
+nav a:active {
+    color: darkgoldenrod;
+}
+
 .box {
     text-align: center;
 }
@@ -32,3 +59,4 @@ body p {
 body h2 {
     color: var(--cortitulo);
 }
+
