@@ -93,3 +93,13 @@ input:checked + label:after {
 label:active:active {
     width: 45px;
 }
+
+footer {
+    text-align: center;
+    background: url(rodape.jpg);
+}
+
+footer p {
+    padding: 125px 0 0 0;
+    color: darkgray;
+}
