@@ -185,3 +185,9 @@ footer p {
     padding: 125px 0 0 0;
     color: darkgray;
 }
+
+@media screen and (max-width:480px) {
+    .box, .texto-princial, .conteudo {
+        width: auto;
+    }
+}
