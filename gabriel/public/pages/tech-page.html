@@ -15,17 +15,22 @@
 
 <header>
     <h1 style="font-size: 0;">Projetos</h1>
+    <div class="row">
+        <div class="col">
+            <button id="mode-button" class="btn btn-larger effect" href="./pages/links.html"> <i class="fa fa-moon-o fa-2x"></i><span id="modeCheck" style="display: none;">dark</span></button>
+        </div>
+    </div>
 </header>
 
-<body id="pages">
+<body class="">
     <section class="container content ">
-        <div class="bckg-box techs">
+        <div id="box" class="techs">
             <div class="row">
                 <div class="col mb-4">
                     <h2 class="mx-4">Conhecimentos e Tecnologias</h2>
                     <div class="line mb-4"></div>
                     <h3 class="mx-3">Web</h3>
-                    <div class="line-but-smaller"></div>
+                    <div class="small-line"></div>
                     <ul class="mx-5">
                         <li>HTML e CSS Básicos.</li>
                         <li>PHP com frameworks CodeIgniter e Laravel.</li>
@@ -34,13 +39,13 @@
                         <!-- <li></li> -->
                     </ul>
                     <h3 class="mx-3">Banco de dados</h3>
-                    <div class="line-but-smaller"></div>
+                    <div  class="small-line"></div>
                     <ul class="mx-5">
                         <li>MYSQL</li>
                         <li>NOSQL e microserviços, tais como Firebase</li>
                     </ul class="mx-5">
                     <h3 class="mx-3">Outros</h3>
-                    <div class="line-but-smaller"></div>
+                    <div  class="small-line"></div>
                     <ul class="mx-5">
                         <li>Programação de microprocessadores em baixo nivel com C++</li>
                         <li>JAVA básico</li>
@@ -69,9 +74,10 @@
 
 </body>
 
+<script src="../js/jquery.js"></script>
+<script src="../js/jquery.cookie-1.4.1.min.js"></script>
+<script src="../js/tech.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-<script src="./js/main.js">
-</script>
 
 
 </html>

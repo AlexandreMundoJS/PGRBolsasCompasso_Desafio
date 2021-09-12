@@ -148,12 +148,18 @@ footer ul {
   text-align: left;
 }
 
-.line-but-smaller {
+.dark-line-but-smaller {
   width: 200px;
   border-bottom: 1px solid white;
   margin-top: -10px;
   margin-bottom: 10px;
-  color: white;
+}
+
+.light-line-but-smaller {
+  width: 200px;
+  border-bottom: 1px solid black;
+  margin-top: -10px;
+  margin-bottom: 10px;
 }
 
 .techs ul {
