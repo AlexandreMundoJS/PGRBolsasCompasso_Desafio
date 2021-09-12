@@ -82,9 +82,11 @@ body .introduction-section .introduction {
   margin-top: 5%;
   border-radius: 4px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  transition: 1s;
 }
 body .introduction-section .introduction:hover {
   box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.5);
+  transition: 1s;
 }
 body .introduction-section .introduction .introduction-img {
   flex-basis: 250px;
@@ -109,7 +111,6 @@ body .introduction-section .introduction .introduction-content p {
   margin-top: 2%;
   font-size: 1vw;
   word-spacing: 2px;
-  line-height: 1vw;
 }
 body .section-title {
   margin-top: 15%;
@@ -148,25 +149,41 @@ body .section-1 .skills-ul ul li #english {
   font-size: 5.5vw;
   margin-left: 20%;
 }
-body .technologies .ul-1 {
+body .section-2 {
+  width: 100%;
+}
+body .section-2 .technologies {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+}
+body .section-2 .technologies .ul-1 {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
 }
-body .technologies .ul-1 li {
+body .section-2 .technologies .ul-1 li {
   margin-top: 5%;
 }
-body .technologies .ul-2 {
+body .section-2 .technologies .ul-1 li img {
+  width: 6vw;
+}
+body .section-2 .technologies .ul-2 {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
-  align-items: flex-start;
+  align-items: center;
   flex-wrap: wrap;
 }
-body .technologies .ul-2 li {
+body .section-2 .technologies .ul-2 li {
   margin-top: 5%;
+}
+body .section-2 .technologies .ul-2 li img {
+  width: 6vw;
 }
 body .section-3 {
   width: 100%;
@@ -228,10 +245,12 @@ body .section-3 .cards .card .btn-div .btn {
   color: #FFFF;
   background: #406deb;
   border-radius: 20px;
+  transition: 1s;
+  font-size: 1vw;
 }
 body .section-3 .cards .card .btn-div .btn:hover {
   background-color: #1a06d3;
-  transition: 500ms;
+  transition: 0.5s;
 }
 
 @media (max-width: 720px) {
