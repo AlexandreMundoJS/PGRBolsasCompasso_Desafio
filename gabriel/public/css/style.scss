@@ -6,9 +6,21 @@ html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acro
   font: inherit;
   line-height: 1.5;
 }
-#landing {
+#landing-dark-mode {
   background-color: #57565b;
   background-image: url("../images/wallpapper.jpg");
+  background-repeat:no-repeat;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+  background-position:center;
+  height: 100%;
+  margin: 0;
+}
+#landing-light-mode {
+  background-color: white;
+  background-image: url("../images/wallpapper-inverted.jpg");
   background-repeat:no-repeat;
   -webkit-background-size:cover;
   -moz-background-size:cover;
