@@ -172,15 +172,11 @@ footer ul {
   font-size: 1.5rem;
 }
 
-.projects {
-  color: white;
-}
-
 .projects h2 {
   text-align: left;
 }
 
-.accordion {
+.accordion-dark {
   background-color: #57565b;
   color: white;
   font-size: 1.5rem;
@@ -198,11 +194,11 @@ footer ul {
   margin-top: 3rem;
 }
 
-.active, .accordion:hover {
+.active, .accordion-dark:hover {
   background-color: #ccc;
 }
 
-.panel {
+.panel-dark {
   padding: 0 18px;
   width: 80%;
   margin: auto;
@@ -212,13 +208,50 @@ footer ul {
   border: 2px solid white;
 }
 
-.panel p {
+.panel-dark p {
   font-size: 1.5rem;
   padding: 1rem;
 }
 
 .project-img {
   max-width: 70%;
+}
+
+.accordion-light {
+  background-color: #a8a9a4;
+  color: black;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 18px;
+  width: 80%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 30px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 5px;
+  border: 2px solid black;
+  margin-top: 3rem;
+}
+
+.active, .accordion-light:hover {
+  background-color: #ccc;
+}
+
+.panel-light {
+  padding: 0 18px;
+  width: 80%;
+  margin: auto;
+  display: none;
+  overflow: hidden;
+  text-align: left;
+  border: 2px solid black;
+}
+
+.panel-light p {
+  font-size: 1.5rem;
+  padding: 1rem;
 }
 
 .page-buttons-dark {

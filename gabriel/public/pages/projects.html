@@ -19,23 +19,17 @@
 
 <header>
     <h1 style="display: none;">Projects</h1>
+    <div class="row">
+        <div class="col">
+            <button id="mode-button" class="btn btn-larger effect" href="./pages/links.html"> <i class="fa fa-moon-o fa-2x"></i><span id="modeCheck" style="display: none;">dark</span></button>
+        </div>
+    </div>
 </header>
 
 <body id="pages">
     <div class="bg-image"></div>
-    <!-- <div class="content">
-        <img class="photo" src="./images/Foto do usuário.jpg" alt="Pessoa">
-        <div class="text-body">
-            <h3 class="landing-page">Ola, meu nome é</h2>
-            <h2 class="landing-page">Gabriel Schirmer</h1>
-            <div class="line"></div>
-        </div>
-        
-        <span class="cum">Desenvolvedor &#8226; Web &#8226; Estudante &#8226; Crypto Freak</span>
-
-    </div> -->
     <section class="container content ">
-        <div class="bckg-box projects">
+        <div id="box" class="projects">
             <div class="row">
                 <div class="col-9 mb-4">
                     <h2 class="mx-4 my-3">Projetos</h2>
@@ -44,11 +38,11 @@
                 <!-- <div class="col-3"><img src="https://img2.gratispng.com/20180418/syq/kisspng-project-management-project-management-jira-conflue-projects-5ad80ecb9465e7.7419263015241090036079.jpg" alt=""></div> -->
             </div>
             <div class="row">
-                <div class="col">
-                    <button id="accordion" class="accordion">IjuiLib</button>
+                <div class="col mb-5">
+                    <button id="accordion" class="accord">IjuiLib</button>
                     <div class="panel">
                         <h3 class="mt-3">Sobre</h3>
-                        <div class="line-but-smaller"></div>
+                        <div class="small-line"></div>
                         <p>Este projeto foi desenvolvido para a matéria de Desenvolvimento Web, onde a pauta consistia
                             no desenvolvimento de uma aplicação web para a comunidade de Ijui, para isto,
                             decidi desenvolver um website para que as pessoas possam anúnciar seus livros também,
@@ -85,10 +79,10 @@
 
                     </div>
 
-                    <button id="accordion" class="accordion">Sensor de temperatura - IoT</button>
+                    <button id="accordion" class="accord">Sensor de temperatura - IoT</button>
                     <div class="panel">
                         <h3 class="mt-3">Sobre</h3>
-                        <div class="line-but-smaller"></div>
+                        <div class="small-line"></div>
                         <p>A seguinte simulação foi desenvolvida para realizar estudos sobre a arquitetura de sistemas
                             IoT e as tecnologias utilizadas em aplicações. A implementação
                             consiste em simular a leitura de um termometroa através de um script gerando números
@@ -127,10 +121,10 @@
                         </div>
 
                     </div>
-                    <button id="accordion" class="accordion">Typer</button>
+                    <button id="accordion" class="accord mb">Typer</button>
                     <div class="panel">
                         <h3 class="mt-3">Sobre</h3>
-                        <div class="line-but-smaller"></div>
+                        <div class="small-line"></div>
                         <p>Este jogo foi desenvolvido com o intuito de exercitar e fixar os aprendizados do curso de
                             Jquery da Alura
                             <br>
@@ -182,8 +176,9 @@
 
 </body>
 
-<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-    crossorigin="anonymous"></script>
+<script src="../js/jquery.js"></script>
+<script src="../js/jquery.cookie-1.4.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <script src="../js/projects.js">
 </script>
 
