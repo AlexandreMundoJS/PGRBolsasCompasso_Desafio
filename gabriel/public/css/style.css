@@ -7,7 +7,7 @@ html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acro
   line-height: 1.5;
 }
 
-#landing-dark-mode {
+.landing-dark-mode {
   background-color: #57565b;
   background-image: url("../images/wallpapper.jpg");
   background-repeat: no-repeat;
@@ -17,7 +17,7 @@ html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acro
   margin: 0;
 }
 
-#landing-light-mode {
+.landing-light-mode {
   background-color: white;
   background-image: url("../images/wallpapper-inverted.jpg");
   background-repeat: no-repeat;
@@ -33,7 +33,18 @@ html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acro
   margin: 0;
 }
 
-.bckg-box {
+.bckg-box-dark {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 3px solid white;
+  border-radius: 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.bckg-box-light {
   text-align: center;
   background-color: rgba(0, 0, 0, 0.6);
   border: 3px solid white;
