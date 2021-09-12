@@ -18,8 +18,7 @@ html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acro
 }
 
 .landing-light-mode {
-  background-color: white;
-  background-image: url("../images/wallpapper-inverted.jpg");
+  background-image: url("../images/wallapper-inverted.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -27,8 +26,14 @@ html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acro
   margin: 0;
 }
 
-#pages {
+#dark-pages {
   background-color: #57565b;
+  height: 100%;
+  margin: 0;
+}
+
+#light-pages {
+  background-color: #a8a9a4;
   height: 100%;
   margin: 0;
 }
@@ -37,6 +42,7 @@ html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acro
   text-align: center;
   background-color: rgba(0, 0, 0, 0.6);
   border: 3px solid white;
+  color: white;
   border-radius: 15px;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -46,8 +52,9 @@ html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acro
 
 .bckg-box-light {
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.6);
-  border: 3px solid white;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 3px solid black;
+  color: black;
   border-radius: 15px;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -55,10 +62,18 @@ html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acro
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.photo {
+.photo-dark {
   max-width: 12rem;
   border-radius: 100%;
   border-color: white;
+  border-width: 5px;
+  border-style: solid;
+}
+
+.photo-light {
+  max-width: 12rem;
+  border-radius: 100%;
+  border-color: black;
   border-width: 5px;
   border-style: solid;
 }
@@ -70,27 +85,23 @@ html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acro
 
 .presentation h3 {
   font-size: 30px;
-  color: white;
 }
 
 .presentation h2 {
   font-size: 65px;
   margin-top: -20px;
-  color: white;
 }
 
 .presentation h4 {
   margin-top: 25px;
   letter-spacing: 0.5em;
-  color: white;
 }
 
 .line {
   width: 100%;
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid;
   margin-top: -10px;
   margin-bottom: 10px;
-  color: white;
 }
 
 footer ul {
