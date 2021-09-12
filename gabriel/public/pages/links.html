@@ -15,11 +15,16 @@
 
 <header>
     <h1 style="font-size: 0;">Projetos</h1>
+    <div class="row">
+        <div class="col">
+            <button id="mode-button" class="btn btn-larger effect" href="./pages/links.html"> <i
+                    class="fa fa-moon-o fa-2x"></i><span id="modeCheck" style="display: none;">dark</span></button>
+        </div>
 </header>
 
 <body id="pages">
     <section class="container content ">
-        <div class="bckg-box techs">
+        <div id="box" class="techs">
             <div class="container">
                 <div class="row">
                     <div class="col mb-4">
@@ -27,20 +32,20 @@
                         <div class="line mb-4"></div>
                     </div>
                 </div>
+
                 <div class="row">
-                    <div class="col-6">
-                        <a class="btn mx-auto btn-larger recolor effect" href="https://www.linkedin.com/in/gabriel-thome-da-cruz-schirmer-5a8501118/" target="blank" data-toggle="tooltip"
-                            title="Home"><i class="fa fa-linkedin fa-4x"></i></a>
-                            
+                    <div class="col-10">
+                        <a class="btn mx-5 recolor effect"
+                            href="https://www.linkedin.com/in/gabriel-thome-da-cruz-schirmer-5a8501118/" target="blank"
+                            data-toggle="tooltip" title="Home"><i class="fa fa-linkedin fa-4x"></i></a>
+
                     </div>
-                    <div class="col-6">
-                        <a class="btn mx-auto btn-larger recolor effect" href="https://github.com/gabrielschirmer1903" target="blank" data-toggle="tooltip"
-                            title="Home"><i class="fa fa-github fa-4x"></i></a>
+                    <div class="col-2">
+                        <a class="btn recolor ml-5 effect" href="https://github.com/gabrielschirmer1903" target="blank"
+                            data-toggle="tooltip" title="Home"><i class="fa fa-github fa-4x"></i></a>
                     </div>
                 </div>
             </div>
-
-        </div>
     </section>
 
     <footer>
@@ -53,7 +58,7 @@
                                 class="fa fa-user-circle-o fa-4x"></i></a></li>
                     <li class="nav-item"><a class="btn btn-larger effect" href="tech-page.html"> <i
                                 class="fa fa-code fa-4x"></i></a></li>
-                    <li class="nav-item"><a class="btn btn-larger effect" href="#"> <i
+                    <li class="nav-item"><a class="btn btn-larger effect" href="projects.html"> <i
                                 class="fa fa-folder fa-4x"></i></a></li>
                     <li class="nav-item"><a class="btn btn-larger effect" href="#"> <i class="fa fa-link fa-4x"></i></a>
                     </li>
@@ -65,8 +70,10 @@
 
 </body>
 
+<script src="../js/jquery.js"></script>
+<script src="../js/jquery.cookie-1.4.1.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-<script src="./js/main.js">
+<script src="../js/link.js">
 </script>
 
 

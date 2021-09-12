@@ -4,19 +4,22 @@ var photo = $('#photo');
 // console.log(bodyClass);
 var changeButton = $("#mode-button");
 var buttonValue = $("#modeCheck").text();
-var modeCookie = $.cookie("mode");
+
+console.log($.cookie('mode'));
 
 $(function(){
-    if (modeCookie == undefined) {
-        $.cookie("mode" , "dark");
-        $("#modeCheck").text("dark");
+    if (($.cookie('mode')) == undefined) {
+        console.log("novo no site");
+        $.cookie('mode', 'dark');
+        var modeCookie = $.cookie('mode');
+        changeMode(modeCookie);
 
-    } else if ($.cookie("mode") == "dark") {
+    } else if ($.cookie('mode') == "dark") {
         console.log("site abert: cookie" + $.cookie("mode"));
-        changeMode($.cookie("mode"));
+        changeMode($.cookie('mode'));
         $("#modeCheck").text("dark");
 
-    } else if ($.cookie("mode") == "light") {
+    } else if ($.cookie('mode') == "light") {
         console.log("site abert: cookie" + $.cookie("mode"));
         changeMode($.cookie("mode"));
         $("#modeCheck").text("light");
@@ -49,7 +52,8 @@ function changeMode(currentMode) {
         box.toggleClass("bckg-box-dark");
         photo.toggleClass("photo-dark");
 
-        $.cookie("mode" , "dark");
+        $.cookie('mode', 'dark')
+        $("#modeCheck").text("dark");
     } 
     if(currentMode == "light") {
         body.removeClass("landing-dark-mode");
@@ -60,6 +64,7 @@ function changeMode(currentMode) {
         box.toggleClass("bckg-box-light");
         photo.toggleClass("photo-light");
 
-        $.cookie("mode" , "light");
+        $.cookie('mode', 'light')
+        $("#modeCheck").text("light");
     }
 }

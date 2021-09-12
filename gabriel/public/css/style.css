@@ -19,6 +19,7 @@ html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acro
 
 .landing-light-mode {
   background-image: url("../images/wallapper-inverted.jpg");
+  background-color: #a8a9a4;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -36,6 +37,10 @@ html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acro
   background-color: #a8a9a4;
   height: 100%;
   margin: 0;
+}
+
+body {
+  height: 100%;
 }
 
 .bckg-box-dark {
@@ -298,6 +303,5 @@ footer ul {
 
 .recolor {
   color: #57565b;
-  position: relative;
 }
 /*# sourceMappingURL=style.css.map */

@@ -4,21 +4,23 @@ var btn = $('#btn');
 // console.log(bodyClass);
 var changeButton = $("#mode-button");
 var buttonValue = $("#modeCheck").text();
-var modeCookie = $.cookie("mode");
+var modeCookie = $.cookie('mode');
 
 $(function(){
     if (modeCookie == undefined) {
-        $.cookie("mode" , "dark");
+        console.log("novo no site");
+        $.cookie('mode' , 'dark');
         $("#modeCheck").text("dark");
+        changeMode(buttonValue);
 
-    } else if ($.cookie("mode") == "dark") {
+    } else if ($.cookie('mode') == "dark") {
         console.log("site abert: cookie" + $.cookie("mode"));
-        changeMode($.cookie("mode"));
-        $("#modeCheck").text("dark");
+        changeMode($.cookie('mode'));
+        $("#modeCheck").text('dark');
 
-    } else if ($.cookie("mode") == "light") {
-        console.log("site abert: cookie" + $.cookie("mode"));
-        changeMode($.cookie("mode"));
+    } else if ($.cookie('mode') == "light") {
+        console.log("site abert: cookie" + $.cookie('mode'));
+        changeMode($.cookie('mode'));
         $("#modeCheck").text("light");
     }
     buttonValue = $("#modeCheck").text();
@@ -29,12 +31,15 @@ changeButton.on("click" , function(){
     if (buttonValue == "dark") {
         $("#modeCheck").text("light");
         buttonValue = $("#modeCheck").text();
-        console.log("agora é:" + buttonValue);
+        
+        console.log("agora é:" + $.cookie('mode'));
+        
 
     } else {
         $("#modeCheck").text("dark");
         buttonValue = $("#modeCheck").text();
-        console.log("agora é:" + buttonValue);
+        console.log("agora é:" + $.cookie('mode'));
+        
     }
     changeMode(buttonValue);
 });
@@ -49,7 +54,9 @@ function changeMode(currentMode) {
         box.toggleClass("bckg-box-dark");
         btn.toggleClass("page-buttons-dark");
 
-        $.cookie("mode" , "dark");
+        $.cookie('mode' , 'dark');
+
+        
     } 
     if(currentMode == "light") {
         body.removeClass("dark-pages");
@@ -60,6 +67,6 @@ function changeMode(currentMode) {
         box.toggleClass("bckg-box-light");
         btn.toggleClass("page-buttons-light");
 
-        $.cookie("mode" , "light");
+        $.cookie('mode' , 'light');
     }
 }

@@ -15,6 +15,7 @@ $(function(){
     if (modeCookie == undefined) {
         $.cookie("mode" , "dark");
         $("#modeCheck").text("dark");
+        changeMode(buttonValue);
 
     } else if ($.cookie("mode") == "dark") {
         changeMode($.cookie("mode"));

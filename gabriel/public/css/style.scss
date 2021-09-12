@@ -6,6 +6,7 @@ html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acro
   font: inherit;
   line-height: 1.5;
 }
+
 .landing-dark-mode {
   background-color: #57565b;
   background-image: url("../images/wallpapper.jpg");
@@ -20,6 +21,7 @@ html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acro
 }
 .landing-light-mode {
   background-image: url("../images/wallapper-inverted.jpg");
+  background-color: #a8a9a4;
   background-repeat:no-repeat;
   -webkit-background-size:cover;
   -moz-background-size:cover;
@@ -38,6 +40,9 @@ html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acro
   background-color: #a8a9a4;
   height: 100%;
   margin: 0;
+}
+body{
+  height: 100%;
 }
 // .bg-image {
 //   background-image: url("../images/wallpapper.jpg");
@@ -316,5 +321,4 @@ footer ul {
 
 .recolor {
   color: #57565b;
-  position: relative;
 }
