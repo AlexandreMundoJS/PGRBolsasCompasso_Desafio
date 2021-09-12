@@ -122,6 +122,12 @@ nav a:active {
     padding: 5px 3px;
 }
 
+.conteudo {
+    border: 5px solid;
+    border-color: var(--header);
+
+}
+
 .accordion-conteudo {
     height: 0;
     overflow: hidden;
@@ -131,6 +137,7 @@ nav a:active {
     -ms-transition: height 0.3s ease-in-out;
     transition: height 0.3s ease-in-out;
     font-size: 35px;
+    color: var(--cortexto);
 }
 
 
