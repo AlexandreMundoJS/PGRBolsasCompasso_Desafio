@@ -102,3 +102,22 @@ nav a:hover {
 nav a:active {
     color: darkgoldenrod;
 }
+
+.conteudo {
+    width: 600px;
+    margin: 0 auto;
+    border: 1px solid #000000;
+}
+
+.itens input {
+    display: none;
+
+}
+
+.itens label {
+    display: block;
+    border: 1px solid #000000;
+    background: #333333;
+    cursor: pointer;
+    padding: 5px 3px;
+}
