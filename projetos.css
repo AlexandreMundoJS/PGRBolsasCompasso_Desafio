@@ -101,6 +101,31 @@ label:active:active {
 .conteudo-pagina h1 {
     font-size: 50px;
     margin-top: 30px;
+    color: var(--cortitulo);
+}
+
+.tabela {
+    margin: 50px 0 50px 375px;
+}
+
+table {
+    font-size: 35px;
+    text-align: center;
+}
+
+thead {
+    background: var(--header);
+    color: var(--cortexto);
+    text-align: center;
+    font-weight: bold;
+}
+
+td {
+    background: var(--background);
+    color: var(--cortexto);
+    border: 1px solid;
+    border-color: var(--header);
+
 }
 
 footer {
