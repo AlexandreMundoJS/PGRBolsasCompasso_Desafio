@@ -63,7 +63,7 @@ nav a:active {
 
 .conteudo {
     width: 600px;
-    margin: 0 auto;
+    margin: 100px auto;
     border: 1px solid #000000;
 }
 
@@ -75,7 +75,36 @@ nav a:active {
 .itens label {
     display: block;
     border: 1px solid #000000;
-    background: #333333;
+    background: #cccccc;
     cursor: pointer;
     padding: 5px 3px;
 }
+
+.accordion-conteudo {
+    height: 0;
+    overflow: hidden;
+    -webkit-transition: height 0.3s ease-in-out;
+    -moz-transition: height 0.3s ease-in-out;
+    -o-transition: height 0.3s ease-in-out;
+    -ms-transition: height 0.3s ease-in-out;
+    transition: height 0.3s ease-in-out;
+    font-size: 35px;
+}
+
+
+#accordion-a:checked ~ .accordion-conteudo {
+    height: 100px;
+}
+
+#accordion-b:checked ~ .accordion-conteudo {
+    height: 100px;
+}
+
+#accordion-c:checked ~ .accordion-conteudo {
+    height: 100px;
+}
+
+main label {
+    font-size: 40px;
+}
+
