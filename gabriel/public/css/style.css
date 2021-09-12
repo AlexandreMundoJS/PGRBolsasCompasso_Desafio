@@ -26,13 +26,13 @@ html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acro
   margin: 0;
 }
 
-#dark-pages {
+.dark-pages {
   background-color: #57565b;
   height: 100%;
   margin: 0;
 }
 
-#light-pages {
+.light-pages {
   background-color: #a8a9a4;
   height: 100%;
   margin: 0;
@@ -79,7 +79,7 @@ html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acro
 }
 
 .content {
-  margin-top: 200px;
+  margin-top: 120px;
   margin-bottom: auto;
 }
 
@@ -122,19 +122,9 @@ footer ul {
 }
 
 .effect {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-radius: 50%;
-  width: 120px;
-  height: 120px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   color: #212529;
@@ -142,44 +132,19 @@ footer ul {
 
 .effect:hover {
   color: #d1d1d1;
-  border-radius: 50%;
-}
-
-.effect:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #3d3d40;
-  border-radius: 50%;
-  z-index: -1;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.effect:hover:before {
-  -webkit-transform: scale(1);
-          transform: scale(1);
 }
 
 .about h2 {
-  color: white;
   text-align: left;
   font-size: 4rem;
 }
 
 .about p {
-  color: white;
   text-align: left;
   font-size: 1.5rem;
 }
 
 .techs {
-  color: white;
   text-align: left;
 }
 
@@ -250,7 +215,7 @@ footer ul {
   max-width: 70%;
 }
 
-.page-buttons {
+.page-buttons-dark {
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
   color: #fff;
@@ -266,9 +231,30 @@ footer ul {
   border-radius: 4px;
 }
 
-.page-buttons:hover {
+.page-buttons-dark:hover {
   color: #001F3F;
   background-color: #fff;
+}
+
+.page-buttons-light {
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  color: black;
+  border: 3px solid black;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1;
+  font-size: 17px;
+  background-color: transparent;
+  padding: 10px;
+  outline: none;
+  border-radius: 4px;
+}
+
+.page-buttons-light:hover {
+  color: white;
+  background-color: black;
 }
 
 .recolor {

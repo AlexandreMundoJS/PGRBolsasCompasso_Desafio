@@ -15,11 +15,16 @@
 
 <header>
     <h1 style="font-size: 0;">About page</h1>
+    <div class="row">
+        <div class="col">
+            <button id="mode-button" class="btn btn-larger effect" href="./pages/links.html"> <i class="fa fa-moon-o fa-2x"></i><span id="modeCheck" style="display: none;">dark</span></button>
+        </div>
+    </div>
 </header>
 
-<body id="pages">
+<body class="">
     <section class="container content ">
-        <div class="bckg-box about">
+        <div id="box" class="about">
             <div class="row">
                 <div class="col-3 mb-4">
                     <img class="mx-3 d-block" src="https://image.shutterstock.com/image-photo/man-suit-hiding-face-behind-260nw-1376915186.jpg" alt="Pessoa">
@@ -33,7 +38,8 @@
                         Nas horas vagas, gosto de estudar sobre blockchain e o mundo De-Fi, e pretendo futuramente começar um projeto nessa nova onda crescente.
                         </p>
                         <br>
-                        <p>Conheça meus trabalhos <a href="">AQUI</a></p>
+                        <p>Conheça meus projetos <a id="btn" class="mx-2 btn"
+                            href="projects.html">AQUI!</a></p>
                 </div>
             </div>
         </div>
@@ -46,8 +52,8 @@
                     <li class="nav-item"><a class="btn btn-larger effect" href="../index.html" data-toggle="tooltip" title="Home"><i class="fa fa-home fa-4x"></i></a></li>
                     <li class="nav-item"><a class="btn btn-larger effect" href="about.html"> <i class="fa fa-user-circle-o fa-4x"></i></a></li>
                     <li class="nav-item"><a class="btn btn-larger effect" href="tech-page.html"> <i class="fa fa-code fa-4x"></i></a></li>
-                    <li class="nav-item"><a class="btn btn-larger effect" href="#"> <i class="fa fa-folder fa-4x"></i></a></li>
-                    <li class="nav-item"><a class="btn btn-larger effect" href="#"> <i class="fa fa-link fa-4x"></i></a></li>
+                    <li class="nav-item"><a class="btn btn-larger effect" href="projects.html"> <i class="fa fa-folder fa-4x"></i></a></li>
+                    <li class="nav-item"><a class="btn btn-larger effect" href="links.html"> <i class="fa fa-link fa-4x"></i></a></li>
 
                 </ul>
             </div>
@@ -56,8 +62,11 @@
 
 </body>
 
+
+<script src="../js/jquery.js"></script>
+<script src="../js/jquery.cookie-1.4.1.min.js"></script>
+<script src="../js/about.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-<script src="./js/main.js">
 </script>
 
 
