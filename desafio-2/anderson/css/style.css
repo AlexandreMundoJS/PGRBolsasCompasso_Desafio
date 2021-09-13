@@ -70,6 +70,45 @@ body .header .social-media ul li .github {
 body .header .social-media ul li .github:hover {
   color: red;
 }
+body .darkmode-div {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-shrink: 2;
+  padding: 25px 10px;
+}
+body .darkmode-div .checkbox {
+  opacity: 0;
+}
+body .darkmode-div .checkbox:checked + .label .ball {
+  transform: translateX(24px);
+}
+body .darkmode-div .label {
+  background-color: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  position: relative;
+  width: 50px;
+  height: 26px;
+}
+body .darkmode-div .label .fa-moon {
+  color: #f1c40f;
+}
+body .darkmode-div .label .fa-sun {
+  color: #f39c12;
+}
+body .darkmode-div .label .ball {
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  height: 22px;
+  width: 22px;
+  transition: transform 0.2s linear;
+}
 body .main-title {
   margin-top: 5%;
   font-size: 2.5vw;
@@ -212,7 +251,7 @@ body .section-3 .cards {
 }
 body .section-3 .cards .card {
   width: 15%;
-  background: #fdfdfd;
+  background-color: #fdfdfd;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -227,7 +266,7 @@ body .section-3 .cards .card:hover {
   transform: scale(1.1);
   transition: 500ms;
 }
-body .section-3 .cards .card .card-text {
+body .section-3 .cards .card .card-title {
   font-size: 1.2vw;
   font-weight: bold;
   width: 100%;
@@ -328,6 +367,19 @@ body footer h2 {
   text-align: center;
   height: 100px;
   width: 100%;
+}
+
+/* Dark Mode */
+.dark {
+  background-color: #292C35;
+}
+
+.dark-h1 {
+  color: white;
+}
+
+.dark-p {
+  color: #292C35;
 }
 
 @media (max-width: 720px) {
