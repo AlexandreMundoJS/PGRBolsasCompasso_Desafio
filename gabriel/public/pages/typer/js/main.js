@@ -1,73 +1,82 @@
-var campo = $(".campo-digitacao");
-var tempoInicial = $("#tempo-digitacao").text();
+var inputField = $(".input-field");
+var initialTime;
 
 $(function(){
-    atualizaTamanhoFrase();
-    inicializaContadores();
-    inicializaCronometro();
-    inicializaMarcadores();
-    $("#botao-reiniciar").click(reiniciaJogo);
+   var words = phraseWordCounter();
+   settingTimer(words);
+   fieldInputCounter();
+   stopwatch();
+   inputTracker();
+   $("#restart-game").click(restartGame);
 });
 
-function atualizaTamanhoFrase() {
-    var frase = $(".frase").text();
-    var numPalavras = frase.split(" ").length;
-    var tamanhoFrase = $("#tamanho-frase");
-    tamanhoFrase.text(numPalavras);
+
+
+function phraseWordCounter () {
+    var phrase = $(".phrase").text();
+    var wordsCount = phrase.split(" ").length;
+    var element = $("#phrase-length");
+    element.text(wordsCount);
+    return wordsCount;
 }
 
-function inicializaContadores() {
-    campo.on("input", function() {
-        var conteudo = campo.val();
+function settingTimer(words){
+    var time = words;
+    $("#timer").text(time);
+    initialTime = words;
+}
 
-        var qtdPalavras = conteudo.split(/\S+/).length - 1;
-        $("#contador-palavras").text(qtdPalavras);
+function fieldInputCounter() {
+    inputField.on("input", function () {
+        var content = inputField.val();
 
-        var qtdCaracteres = conteudo.length;
-        $("#contador-caracteres").text(qtdCaracteres);
+        var words = content.split(/\S+/).length - 1;
+        $("#word-count").text(words);
+
+        var characterCount = content.length;
+        $("#character-count").text(characterCount);
     });
 }
 
-function inicializaCronometro() {
-    var tempoRestante = $("#tempo-digitacao").text();
-    campo.one("focus", function() {
-        var cronometroID = setInterval(function() {
-            tempoRestante--;
-            $("#tempo-digitacao").text(tempoRestante);
-            if (tempoRestante < 1) {
-                campo.attr("disabled", true);
-                clearInterval(cronometroID);
-                campo.toggleClass("campo-desativado");
+function stopwatch(){
+    timeRemaining = $("#timer").text();
+    inputField.one("focus" , function(){
+        var stopwatchID = setInterval(function () {
+            timeRemaining--;
+            $("#timer").text(timeRemaining);
+            if (timeRemaining < 1) {
+                inputField.attr("disabled", true);
+                clearInterval(stopwatchID);
+                inputField.css("background-color", "lightgray");
             }
         }, 1000);
     });
 }
 
-function inicializaMarcadores() {
-    var frase = $(".frase").text();
-    campo.on("input", function() {
-        var digitado = campo.val();
-        var comparavel = frase.substr(0 , digitado.length);
+function inputTracker() {
+    var phrase = $(".phrase").text();
+    inputField.on("input", function() {
+        var typed = inputField.val();
+        var comparison = phrase.substr(0 , typed.length);
 
-        if(digitado == comparavel) {
-            campo.addClass("borda-verde");
-            campo.removeClass("borda-vermelha");
+        if(typed == comparison) {
+            inputField.addClass("green-border");
+            inputField.removeClass("red-border");
         } else {
-            campo.addClass("borda-vermelha");
-            campo.removeClass("borda-verde");
+            inputField.addClass("red-border");
+            inputField.removeClass("green-border");
         }
     });
 }
 
-function reiniciaJogo() {
-    campo.attr("disabled", false);
-    campo.val("");
-    $("#contador-palavras").text("0");
-    $("#contador-caracteres").text("0");
-    $("#tempo-digitacao").text(tempoInicial);
 
-    inicializaCronometro();
-    campo.toggleClass("campo-desativado");
-    campo.removeClass("borda-vermelha");
-    campo.removeClass("borda-verde");
-};
+function restartGame() {
+    inputField.attr("disabled", false);
+    inputField.val("");
+    
+    $("#word-count").text("0");
+    $("#character-count").text("0");
+    $("#timer").text(initialTime);
+    stopwatch()
+    inputField.css("background-color", "white");
+}

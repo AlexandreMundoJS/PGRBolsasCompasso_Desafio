@@ -1,26 +1,20 @@
 var body = $('body');
 var box = $('#box');
 var photo = $('#photo');
-// console.log(bodyClass);
 var changeButton = $("#mode-button");
 var buttonValue = $("#modeCheck").text();
 
-console.log($.cookie('mode'));
-
 $(function(){
     if (($.cookie('mode')) == undefined) {
-        console.log("novo no site");
         $.cookie('mode', 'dark');
         var modeCookie = $.cookie('mode');
         changeMode(modeCookie);
 
     } else if ($.cookie('mode') == "dark") {
-        console.log("site abert: cookie" + $.cookie("mode"));
         changeMode($.cookie('mode'));
         $("#modeCheck").text("dark");
 
     } else if ($.cookie('mode') == "light") {
-        console.log("site abert: cookie" + $.cookie("mode"));
         changeMode($.cookie("mode"));
         $("#modeCheck").text("light");
     }
@@ -32,12 +26,10 @@ changeButton.on("click" , function(){
     if (buttonValue == "dark") {
         $("#modeCheck").text("light");
         buttonValue = $("#modeCheck").text();
-        console.log("agora é:" + buttonValue);
 
     } else {
         $("#modeCheck").text("dark");
         buttonValue = $("#modeCheck").text();
-        console.log("agora é:" + buttonValue);
     }
     changeMode(buttonValue);
 });

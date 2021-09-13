@@ -18,6 +18,7 @@ html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acro
   background-position:center;
   height: 100%;
   margin: 0;
+  width: auto;
 }
 .landing-light-mode {
   background-image: url("../images/wallapper-inverted.jpg");
@@ -30,6 +31,7 @@ html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acro
   background-position:center;
   height: 100%;
   margin: 0;
+  width: auto;
 }
 .dark-pages{
   background-color: #57565b;
@@ -44,26 +46,7 @@ html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acro
 body{
   height: 100%;
 }
-// .bg-image {
-//   background-image: url("../images/wallpapper.jpg");
-//   filter: blur(1px);
-//   -webkit-filter: blur(3px);
-//   -webkit-background-size: cover;
-//   /* Full height */
-//   height: 100%;
-//   /* Center and scale the image nicely */
-//   background-position: center;
-//   background-repeat: no-repeat;
-//   background-size: cover;
-// }
 .bckg-box-dark {
-  // position: absolute;
-  // top: 50%;
-  // left: 50%;
-  // transform: translate(-50%, -50%);
-  // z-index: 2;
-  // width: 80%;
-  // padding: 20px;
   text-align: center;
   background-color: rgba(0,0,0,0.6);
   border: 3px solid white;
@@ -74,13 +57,6 @@ body{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .bckg-box-light {
-  // position: absolute;
-  // top: 50%;
-  // left: 50%;
-  // transform: translate(-50%, -50%);
-  // z-index: 2;
-  // width: 80%;
-  // padding: 20px;
   text-align: center;
   background-color: rgba(255,255,255,0.8);
   border: 3px solid black;
@@ -108,8 +84,8 @@ body{
 
 .content {
 
-  margin-top: 120px;
-  margin-bottom: auto;
+  margin-top: 150px;
+  margin-bottom: 120px;
 
 }
 .presentation h3 {
@@ -242,9 +218,6 @@ footer ul {
   padding: 1rem;
 }
 
-.project-img {
-  max-width: 70%;
-}
 .accordion-light {
   background-color: #a8a9a4;
   color: black;
@@ -322,3 +295,10 @@ footer ul {
 .recolor {
   color: #57565b;
 }
+
+.about-photo {
+  height: auto;
+  width: auto;
+}
+
+

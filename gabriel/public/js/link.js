@@ -30,12 +30,10 @@ changeButton.on("click" , function(){
     if (buttonValue == "dark") {
         $("#modeCheck").text("light");
         buttonValue = $("#modeCheck").text();
-        console.log("agora é:" + buttonValue);
 
     } else {
         $("#modeCheck").text("dark");
         buttonValue = $("#modeCheck").text();
-        console.log("agora é:" + buttonValue);
     }
     changeMode(buttonValue);
 });

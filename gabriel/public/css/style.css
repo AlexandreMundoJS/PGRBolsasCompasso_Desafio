@@ -15,6 +15,7 @@ html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acro
   background-position: center;
   height: 100%;
   margin: 0;
+  width: auto;
 }
 
 .landing-light-mode {
@@ -25,6 +26,7 @@ html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acro
   background-position: center;
   height: 100%;
   margin: 0;
+  width: auto;
 }
 
 .dark-pages {
@@ -84,8 +86,8 @@ body {
 }
 
 .content {
-  margin-top: 120px;
-  margin-bottom: auto;
+  margin-top: 150px;
+  margin-bottom: 120px;
 }
 
 .presentation h3 {
@@ -218,10 +220,6 @@ footer ul {
   padding: 1rem;
 }
 
-.project-img {
-  max-width: 70%;
-}
-
 .accordion-light {
   background-color: #a8a9a4;
   color: black;
@@ -303,5 +301,10 @@ footer ul {
 
 .recolor {
   color: #57565b;
+}
+
+.about-photo {
+  height: auto;
+  width: auto;
 }
 /*# sourceMappingURL=style.css.map */

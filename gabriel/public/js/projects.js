@@ -4,7 +4,6 @@ var body = $('body');
 var box = $('#box');
 var btn = $('#btn');
 var smallLine = $('.small-line');
-// console.log(bodyClass);
 var changeButton = $("#mode-button");
 var buttonValue = $("#modeCheck").text();
 var accordion = $('.accord');
@@ -33,12 +32,10 @@ changeButton.on("click" , function(){
     if (buttonValue == "dark") {
         $("#modeCheck").text("light");
         buttonValue = $("#modeCheck").text();
-        console.log("agora é:" + buttonValue);
 
     } else {
         $("#modeCheck").text("dark");
         buttonValue = $("#modeCheck").text();
-        console.log("agora é:" + buttonValue);
     }
     changeMode(buttonValue);
 });
