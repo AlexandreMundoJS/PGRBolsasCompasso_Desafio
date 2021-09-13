@@ -11,7 +11,7 @@ body .responsive {
 body .header {
   height: 100px;
   width: 100%;
-  background-color: black;
+  background-color: #000000;
   display: flex;
   font-family: sans-serif;
 }
@@ -85,7 +85,7 @@ body .introduction-section .introduction {
   display: flex;
   align-items: center;
   padding: 20px;
-  width: 80%;
+  width: 65%;
   margin-top: 5%;
   border-radius: 4px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
@@ -117,6 +117,7 @@ body .introduction-section .introduction .introduction-content p {
   padding: 10px 0 0;
   margin-top: 2%;
   font-size: 1vw;
+  letter-spacing: 2px;
   word-spacing: 2px;
 }
 body .section-title {
@@ -259,6 +260,10 @@ body .section-3 .cards .card .btn-div .btn:hover {
   background-color: #1a06d3;
   transition: 0.5s;
 }
+body .btn-slide {
+  display: flex;
+  justify-content: flex-start;
+}
 body .contato {
   display: flex;
   justify-content: center;
@@ -311,6 +316,18 @@ body .contato .form .btn-form {
 body .contato .form .btn-form:hover {
   background-color: #1a06d3;
   transition: 0.5s;
+}
+body footer {
+  display: flex;
+  justify-content: center;
+  background-color: #000000;
+}
+body footer h2 {
+  margin-top: 5%;
+  color: white;
+  text-align: center;
+  height: 100px;
+  width: 100%;
 }
 
 @media (max-width: 720px) {
