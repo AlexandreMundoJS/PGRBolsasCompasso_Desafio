@@ -5,10 +5,11 @@ var changeButton = $("#mode-button");
 var buttonValue = $("#modeCheck").text();
 
 $(function(){
-    if (($.cookie('mode')) == undefined) {
+
+    if ($.cookie('mode') == undefined) {
         $.cookie('mode', 'dark');
         var modeCookie = $.cookie('mode');
-        changeMode(modeCookie);
+        changeMode(buttonValue);
 
     } else if ($.cookie('mode') == "dark") {
         changeMode($.cookie('mode'));
