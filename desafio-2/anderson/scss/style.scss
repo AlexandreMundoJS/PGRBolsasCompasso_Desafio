@@ -99,6 +99,14 @@ body {
 
     }
     
+    .main-title {
+        margin-top: 5%;
+        font-size: 2.5vw;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: bold;
+    }
+
     .introduction-section{
         display: flex;
         justify-content: center;
@@ -334,6 +342,70 @@ body {
 
     }
 
+    .contato {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+
+        .form {
+            padding: 20px;
+            background-color: #FFFFFF;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+            border-radius: 5px;
+
+            .row {
+                padding: 10px;
+
+            }
+
+            .input {
+                width: 100%;
+                padding: 5px;
+                border: 1px solid #CCCCCC;
+                border-radius: 5px;
+                font-size: 1vw;
+                font-family: 'Montserrat', sans-serif;
+
+                &:focus {
+                    outline-color: #2196F3;
+                }
+            }
+
+            textarea {
+                width: 100%;
+                height: 150px;
+                padding: 8px;
+                border: 1px solid #CCCCCC;
+                border-radius: 5px;
+                font-size: 1vw;
+                resize: none;
+                font-family: 'Montserrat', sans-serif;
+
+                &:focus {
+                    outline-color: #2196F3;
+                }
+            }
+            
+            .btn-form {
+                width: 100%;
+                padding: 8px;
+                background-color: #3F51B5;
+                color: #FFFFFF;
+                border: 1px solid #CCCCCC;
+                border-radius: 8px;
+                transition: 1s;
+
+                &:hover {
+                    background-color: #1a06d3;
+                    transition: 0.5s;
+                }
+            }
+        }
+
+    }
+
 }       
 
 
@@ -344,4 +416,3 @@ body {
     }
 
 }
-
