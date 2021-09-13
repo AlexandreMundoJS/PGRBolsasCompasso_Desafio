@@ -116,22 +116,23 @@
 
          <div class="btn-slide"><button class="slide">Abcx</button></div>
 
+            <div id="error"></div>
             <section id="contato-id" class="contato">
-            <form class="form">
+            <form class="form" id="form">
                 <div class="row">
-                    <input type="text" class="input" name="nome" placeholder="Nome">
+                    <input type="text" class="input" name="nome" placeholder="Nome" id="name">
                 </div>
                 <div class="row">
-                    <input type="text" class="input" name="nome" placeholder="E-mail">
+                    <input type="text" class="input" name="email" placeholder="E-mail" id="email">
                 </div>
                 <div class="row">
-                    <input type="text" class="input" name="nome" placeholder="Assunto">
+                    <input type="text" class="input" name="assunto" placeholder="Assunto" id="content">
                 </div>
                 <div class="row">
-                    <textarea class="mensagem" name="mensagem" placeholder="Mensagem"></textarea>
+                    <textarea class="mensagem" name="mensagem" placeholder="Mensagem" id="message"></textarea>
                 </div>
                 <div class="row">
-                   <input type="submit" class="btn-form" name="enviar" value="Enviar">
+                   <input type="submit" class="btn-form" name="enviar" value="Enviar" id="submit">
                 </div>
             </form>
 
@@ -147,6 +148,7 @@
     <script src="js/jquery.js"></script>
     <script src="js/script.js"></script>
     <script src="js/darkmode.js"></script>
+    <script src="js/form.js"></script>
     <script src="js/tooltipster.bundle.min.js"></script>
 
 </body>
