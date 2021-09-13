@@ -28,7 +28,7 @@
         </div>                          
     </header>
 
-    <div class="darkmode-div responsive">
+    <div class="darkmode-div">
         <input type="checkbox" class="checkbox" id="checkbox">
         <label for="checkbox" class="label">
             <i class="fas fa-moon"></i>
@@ -54,19 +54,13 @@
             </div>
         </section>
 
-
-
-
-
-
-
         <h2 class="section-title">Skills</h2>
 
         <section class="section-1">
            <div class="skills-ul">
                <ul>
-                   <li><i class="fas fa-users" id="teamwork"></i></br><p>Trabalho em Equipe</p></li>
-                   <li><i class="fas fa-globe-americas english" id="teamwork"></i></br><p>Inglês avançado</p></li>
+                   <li><i class="fas fa-users skills-icon"></i></br><p>Trabalho em Equipe</p></li>
+                   <li><i class="fas fa-globe-americas english skills-icon"></i></br><p>Inglês avançado</p></li>
                </ul>
            </div>   
         </section>
@@ -114,11 +108,12 @@
              </div>
          </section>
 
-         <div class="btn-slide"><button class="slide">Abcx</button></div>
 
-            <div id="error"></div>
+            <div class="btn-opacity"><i class="fas fa-envelope-square contact-button" id="contact-button"></i> <h2>Fale comigo!</h2></div>
+
             <section id="contato-id" class="contato">
-            <form class="form" id="form">
+                <div id="error" class="form-opacity"></div>
+            <form class="form form-opacity" id="form">
                 <div class="row">
                     <input type="text" class="input" name="nome" placeholder="Nome" id="name">
                 </div>
@@ -126,17 +121,19 @@
                     <input type="text" class="input" name="email" placeholder="E-mail" id="email">
                 </div>
                 <div class="row">
-                    <input type="text" class="input" name="assunto" placeholder="Assunto" id="content">
+                    <input type="text" class="input" name="assunto" placeholder="Assunto" id="subject">
                 </div>
                 <div class="row">
-                    <textarea class="mensagem" name="mensagem" placeholder="Mensagem" id="message"></textarea>
+                    <textarea class="mensagem" name="mensagem" placeholder="Digite sua mensagem aqui..." id="content"></textarea>
                 </div>
                 <div class="row">
-                   <input type="submit" class="btn-form" name="enviar" value="Enviar" id="submit">
+                    <input type="submit" class="btn-form" name="enviar" value="Enviar" id="submit">
                 </div>
             </form>
 
-         </section>
+
+        </section>
+         
 
          <footer>
             <h2>Obrigado por conferir meu Portfólio :)</h2> 
