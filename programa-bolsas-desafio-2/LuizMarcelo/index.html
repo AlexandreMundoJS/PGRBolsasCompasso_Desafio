@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portifolio Luiz Marcelo</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+
+  <script src="https://kit.fontawesome.com/7c6b16e29d.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!--cabeçalho (bem vindo e menu)-->
+  <nav class="navbar navbar-expand-lg navbar-light bem-vindo corPrimaria">
+    <a class="navbar-brand " href="#">SEJA BEM-VINDO</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto"></ul>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#home">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#sobre-mim">SOBRE MIM</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#experiencias">EXPERIÊNCIAS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contato">CONTATOS</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!--Modo Noturno-->
+  <input class="check" type="checkbox" id="switch">
+  <div class="outer">
+    <label for="switch">
+      <span class="toggle">
+        <span class="circle"></span>
+      </span>
+    </label>
+  </div>
+
+  <!--icone para voltar ao topo-->
+  <a id="voltarTopo" href="#"> <img src="voltarTopo.png"> </a>
+
+  <!--HOME(nome e foto de perfil)-->
+  <section class="corPrimaria jumbotron text-center" id="home">
+    <div class="container">
+      <h1 class="jumbotron-heading titulosDestacados">LUIZ MARCELO</h1>
+      <a href="https://www.instagram.com/luizmarceloviero/"> <i class="icones fab fa-instagram"></i> </a>
+      <a href="https://www.facebook.com/luizmarcelo.dellalibera/"> <i class="icones fab fa-facebook"></i> </a>
+      <a href="https://br.linkedin.com/in/luizmarceloviero"> <i class="icones fab fa-linkedin"></i> </a>
+      <a href="https://github.com/luizmarcelo77"> <i class="icones fab fa-github"></i> </a> <br>
+      <img id="foto-perfil" src="principal.png">
+    </div>
+  </section>
+
+  <!--Sobre mim-->
+  <section class="jumbotron text-center corSecundaria" id="sobre-mim">
+    <div class="container titulosCinza">
+      <h2>SOBRE MIM </h2> <BR>
+      <h3>Luiz Marcelo Viero Della Libera </h3>
+      <p class="lead">Nascido em 26/03/1999 na cidade de SantiagoRS, em 2014 iniciou um curso de técnico em informática
+        e teve o primeiro contato com a computação, após isso percebeu que não poderia escolher outra área profissional
+        a não ser a TI, atualmente é estudante de ciência da computação na URI-Santiago, fascinado pela tecnologia,
+        procurando sempre novos conhecimentos e desafios.
+        Viciado em viajar, conhecer novos lugares, novas experiências, gosta de estar em meio a natureza, acampamentos,
+        trilhas... Os desafios o motivam!</p>
+    </div> <br>
+  </section>
+
+  <!--Experiencias--> <br>
+  <section class="corPrimaria jumbotron text-center" id="experiencias">
+      <h1>EXPERIÊNCIAS PROFISSIONAIS</h1><BR>
+      <p class="lead cor">Teve inicio na sua carreira profissional em 2017 quando atuou dois meses como estagiário de
+        programação na empresa YourCode, após isso atuou por dois anos como estagiário Auxiliar Administrativo e TI na
+        Agência de Desenvolvimento de Santiago uma entidade que tinha por objetivo apoiar o desenvolvimento,
+        empreendedorismo e inovação da cidade e região, em 2019 ingressou na rede de papelarias HM Papelaria e Bazar
+        onde atuou auxiliando na gestão das suas 5 filiais, como responsável pela logística e precificação de
+        mercadorias, e dando suporte necessário no TI da empresa, atualmente é estagiário de programação na empresa
+        Compasso UOL</p>
+  <br>
+  </section>
+
+  <!--Contatos-->
+  <section class="corSecundaria jumbotron text-center" id="contato">
+    <div class="container">
+      <h2>CONTATOS</h2> <br>
+      <h2 class="corSecundaria">
+        <p class="lead">Se quiser conversar, tirar dúvidas ou dar sugestões, estou a disposição</p>
+        <a href="https://api.whatsapp.com/qr/XQR4LNC46DUTE1">
+          <p class="lead icones"> <img id="iconesContato" src="iconeZap.png"> (55) 9 96983495</p>
+        </a>
+        <a href="mailto:luizmarcelo.dl@gmail.com">
+          <p class="lead icones"> <img id="iconesContato" src="iconeEmail.png"> luizmarcelo.dl@gmail.com</p>
+        </a>
+        <p class="lead">Ou em qualquer uma das redes sociais</p>
+        <a href="https://www.instagram.com/luizmarceloviero/"> <i class="icones fab fa-instagram"></i> </a>
+        <a href="https://www.facebook.com/luizmarcelo.dellalibera/"> <i class="icones fab fa-facebook"></i> </a>
+        <a href="https://br.linkedin.com/in/luizmarceloviero"> <i class="icones fab fa-linkedin"></i> </a>
+        <a href="https://github.com/luizmarcelo77"> <i class="icones fab fa-github"></i> </a>
+      </h2>
+    </div>
+  </section>
+
+  <!--Footer-->
+  <footer class="text-center corPrimaria titulosDestacados">
+    <p>Copyright 2021 Luiz Marcelo</p>
+  </footer>
+</body>
+
+</html>
