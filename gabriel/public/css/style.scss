@@ -300,5 +300,21 @@ footer ul {
   height: auto;
   width: auto;
 }
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box div {
+  margin: 0 auto;
+}
 
+.box ul {
+  margin: auto;
+}
 
+@media screen and (max-device-width: 480px){
+  .box ul {
+    margin-left: 60px;
+  }
+}
