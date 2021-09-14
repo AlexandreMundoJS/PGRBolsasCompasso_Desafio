@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <meta http-equiv="X-UA-Compatible" content="ie=edge">
+                <title>Sobre-Vinicius</title>
+                <link rel="stylesheet" href="reset.css">
+                <link rel="stylesheet" href="Sobres.css">
+                <script src="Home.js" defer></script>
+                <link rel="shortcut icon"href="flavi.png">
+        </head>
+
+        <body>
+                <header>
+                        <h1><a href="Home.html"> <img src="logo.png"></a></h1>
+                        <nav>
+                                <ul>
+                                        <li><a href="Sobres.html">Sobre</a></li>
+                                        <li><a href="skills.html">Skills</a></li>
+                                        <li><a href="Projetos.html">Projetos</a></li>
+                                </ul>
+                        </nav>
+                </header>
+
+                <main>
+                        <div class="container">
+                                <input type="checkbox" id="btn" name="btn">
+                                <label for="btn"></label>
+                        </div>
+
+                        <h2>Um pouco sobre mim</h2> 
+                        
+                        <img id="perfil" src="perfil.jpg">
+
+                        <div class="accordion">
+                               <div class="contentBx">
+                                       <div class="label">Informações pessoais</div>
+                                       <div class="content">
+                                               <p>Nome:Vinicius Krupp Fuhrmann<br>Idade:18 anos<br>Endereço:Ijui-RS     
+                                               </p> 
+                                       </div>
+                               </div>
+                               <div class="contentBx">
+                                       <div class="label">Objetivos</div>
+                                       <div class="content">
+                                               <p>Aprender diferentes linguagens de programação<br>Comprender a lógica de programação<br>Atuar na área de computação</p>
+                                               
+                                       </div>
+                               </div>
+                               <div class="contentBx">
+                                       <div class="label">Gostos pessoais</div>
+                                       <div class="content">
+                                               <p>Games<br>Mudo geek<br>Filmes<br>Evolução dos equipamentos eletronicos</p>
+                                               
+                                       </div>
+                               </div>
+                               <div class="contentBx">
+                                        <div class="label">Carreira</div>
+                                        <div class="content">
+                                                <p>-Estagiario na empresa Compasso UOL</p>
+                                                <img src="uol.png">
+                                                <a href="https://compassouol.com/">Sobre</a>         
+                                </div>
+                        </div>
+                        </div>
+                        <script>
+                               const accordion = document.getElementsByClassName
+                               ('contentBx');
+
+                               for (i = 0; i<accordion.length; i++ ){
+                                       accordion[i].addEventListener('click', function(){
+                                               this.classList.toggle('active')
+                                       })
+                               }
+                        </script>
+
+                </main>
+
+                <footer>
+                        <img src="logo.png">
+                        <p>Copyrighy ViniciusKF-2021</p>
+                </footer>
+        </body>
+</html>    
