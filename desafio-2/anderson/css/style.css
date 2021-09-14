@@ -71,7 +71,7 @@ body .header .social-media ul li .github:hover {
   color: red;
 }
 body .darkmode-div {
-  width: 100%;
+  width: 50%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -393,16 +393,16 @@ body .btn-opacity h2 {
 body footer {
   display: flex;
   justify-content: center;
+  align-items: center;
   background-color: #000000;
-  height: 40vh;
+  height: 200px;
+  width: 100%;
 }
 body footer h2 {
-  margin-top: 20vh;
   color: white;
   text-align: center;
-  height: 100px;
   width: 100%;
-  font-size: 2vw;
+  font-size: 1vw;
 }
 
 /* Form opacity */
