@@ -115,6 +115,7 @@ body {
                 &:checked + .label .ball {
                     transform: translateX(24px);
                 }
+
             }
             
         
@@ -146,7 +147,9 @@ body {
                     width: 22px; //22px
                     transition: transform 0.2s linear;
                 }
+
             }   
+
         }
     .main-title {
         margin-top: 5%;
@@ -386,6 +389,7 @@ body {
                     }
 
                 }
+
             }
 
         }
@@ -467,7 +471,9 @@ body {
                     background-color: #1a06d3;
                     transition: 0.5s;
                 }
+
             }
+            
         }
 
     }
