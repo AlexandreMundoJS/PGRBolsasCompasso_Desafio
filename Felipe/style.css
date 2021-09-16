@@ -1,0 +1,135 @@
+html, body{
+    font-family: 'Calligraffitti', cursive;
+    background-image:  linear-gradient(to top, black, DimGray);
+    height: 100%;
+}
+
+.menu ul{
+    display: flex;
+    justify-content: flex-end;
+    background: black ;
+    list-style: none;
+    text-align: right;
+    font-size: 40px;
+    font-family: 'Bangers', cursive;
+}
+
+.menu ul li a{
+    padding: 15px 25px;
+    
+    display: inline-block;
+
+    color: white;
+    text-decoration: none;
+}
+.menu ul li a:hover{
+    color: goldenrod;
+}
+
+.menu ul li a:active{
+    color: rgb(0, 255, 0);
+}
+
+header{
+    padding: 0 0 25px 0;
+}
+
+.titulo{
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    font-weight: bold;
+}
+
+.imagem{
+    width: 500px;
+	opacity: 1;
+	transition: 400ms;
+	box-shadow: 10px 10px 10px 0 #000000;
+    border-radius: 15px;
+    align-items: center;
+}
+
+.imagem:hover{
+    opacity: 0.3;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 490px;
+}
+
+.info{
+    position: absolute;
+    left: 10px;
+    font-size: xx-large;
+    color: darkgray;
+    font-family: 'Amaranth', sans-serif;
+    padding: 0 0 40px 0;
+}
+
+.info1{
+    position: absolute;
+    left: 10px;
+    color: white;
+    font-family: 'Amaranth', sans-serif;
+}
+
+.texto{
+    padding:20px;
+    font-size: large;
+    font-family: 'Amaranth', sans-serif;
+    text-align:center;
+    color:white;
+    opacity:0;
+    transition: opacity .2s linear;
+    background-color:transparent;
+    float: none;
+  }
+
+  .imagem1:hover .texto{
+    opacity:1;
+   }
+
+footer{
+    text-align: center;
+	background: url("bg.jpg");
+    height: 40%;
+}
+.copyright {
+	color: #FFFFFF;
+	font-size: 13px;
+    text-align:center;
+    padding:220px 0 0 0;
+}
+
+.caixa{
+    text-align: center;
+}
+
+.box{
+    display: inline-grid;
+    justify-items: center;
+    font-size: x-large;
+    border: inset;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.enviar{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: none;
+    padding: 10px 10px;
+}
+
+.cinza{
+    background: #808080;
+    color: #fff;
+    box-shadow: 0 5px 0 #C0C0C0;
+}
