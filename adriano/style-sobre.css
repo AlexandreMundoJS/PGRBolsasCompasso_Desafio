@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+    color: black;
+    transition: background 0.5s linear, color 0.5s linear;
+}
+
+body.dark {
+    background-color: black;
+    color: white;
+}
+
+.dark {
+    position: fixed;
+    top: 13px;
+    left: 13px;
+}
+
+.escuro {
+    cursor: pointer;
+    transition: 0.5s linear;
+}
+
+body.dark label{
+    background-color: white;
+}
+
+/* HEADER */
+
+.header-container {
+    height: 100vh;
+    width: 100vw;
+    background-image: url('./sobre-icon.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    box-sizing: border-box;
+    padding: 0 112px;
+    position: relative;
+}
+
+h1 {
+    font-size: 35px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+h2 {
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+h3 {
+    font-size: 23px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.voltar {
+    text-decoration: none;
+}
+
+.voltar a {
+    color: #7676d6;
+}
+
+a {
+	color: black;
+	font-size: 19px;
+	text-decoration: none;
+}
+
+.voltar:hover {
+	color: #7676d6;
+	text-decoration: underline;
+}
