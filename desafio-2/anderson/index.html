@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css" class="theme">
+    <script src="https://kit.fontawesome.com/5bd7520a30.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/tooltipster.bundle.min.css" />
+
+    <title>Anderson Severo - Portfólio</title>
+</head>
+<body>
+    <header class="header">
+        <div class="brand">
+            <h1>Anderson Severo</h1>
+        </div>
+        <div class="social-media">
+            <ul>
+                <li><a href="https://www.facebook.com/anderson.severo.125" target="_blank" class="face"><i class="fab fa-facebook" ></i></a></li>
+                <li><a href="#" class="tt"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com/severoanderson_/" target="_blank" class="insta"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/anderson-severo-635893200/" target="_blank" class="linkedin"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="https://github.com/severogit" target="_blank" class="github"><i class="fab fa-github"></i></a></li>
+            </ul>
+        </div>                          
+    </header>
+
+    <div class="darkmode-div">
+        <input type="checkbox" class="checkbox" id="checkbox">
+        <label for="checkbox" class="label">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+            <div class="ball"></div>
+        </label>
+    </div>
+
+    <main class="main">
+        <h2 class="main-title">Perfil</h2>
+        <section class="introduction-section">
+            <div class="introduction responsive">                             
+                <div class="introduction-img">
+                    <img src="../anderson/public/perfil.png" alt="Foto" class="responsive">
+                </div> 
+                    <div class="introduction-content">
+                        <h2>Quem sou eu?</h2>
+                    <p> Meu nome é Anderson de Pietro Severo, nasci em Erechim e tenho 24 anos. Atualmente, curso Ciência da Computação na URI Erechim.
+                        Desde criança, sempre gostei de tecnologias, apaixonado por jogos. Mesmo que exista uma grande diferença entre isso e os assuntos abordados, foi assim que me 
+                        interessei por cursar "CC", e começar a bolsa da Compasso.                  
+                    </p>
+                    <div>
+            </div>
+        </section>
+
+        <h2 class="section-title">Skills</h2>
+
+        <section class="section-1">
+           <div class="skills-ul">
+               <ul>
+                   <li><i class="fas fa-users skills-icon"></i></br><p>Trabalho em Equipe</p></li>
+                   <li><i class="fas fa-globe-americas english skills-icon"></i></br><p>Inglês avançado</p></li>
+               </ul>
+           </div>   
+        </section>
+
+        <section class="section-2">
+            <div class="technologies">
+                <ul class="ul-1">
+                    <li><img src="../anderson/public/html5.png" class="tooltip" title="HTML5"></li>
+                    <li><img src="../anderson/public/css3.png" class="tooltip" title="CSS3"></li>
+                    <li><img src="../anderson/public/js.png" class="tooltip" title="JavaScript"></li>
+                </ul>
+
+                <ul class="ul-2">
+                    <li><img src="../anderson/public/git.png" class="tooltip" title="Git"></li>
+                    <li><img src="../anderson/public/github.png" class="tooltip" title="GitHub"></li>
+                    <li><img src="../anderson/public/sass.png" class="tooltip" title="Sass"></li>
+                </ul>
+            </div>
+         </section>
+
+         <h2 class="section-title">Meus Projetos</h2>
+
+         <section class="section-3">
+             <div class="cards responsive">
+                <div class="card">
+                    <div><img src="../anderson/public/card-1.png" class="responsive"></div>
+                    <h2 class="card-title">Efeito Parallax</h2>
+                    <p id="card-text-1">Tela com efeito Parallax que fiz, não consegui replicar várias coisas que eu tentei e também agora estou descobrindo o tanto de gambiarra e coisa errada que fiz.
+                    </p>
+                        <div class="btn-div"><a href="https://github.com/severogit/Parallax" target="_blank" class="btn">Acessar</a></div>
+                </div>
+                <div class="card">
+                    <div><img src="../anderson/public/card-2.png" class="responsive"></div>
+                    <h2 class="card-title">Barbearia</h2>
+                    <p id="card-text-2">Primeiro projeto em HTML/CSS da trilha dos cursos com algumas alterações como por exemplo o logo que coloquei da Barbearia do meu amigo 'Barber Shop Tomazoni'. </p>
+                    <div class="btn-div"><a href="https://github.com/severogit/projeto-barbearia" target="_blank" class="btn">Acessar</a></div>
+                </div>
+                <div class="card">
+                    <div><img src="../anderson/public/card-3.png"  class="responsive"></div>
+                    <h2 class="card-title">Alura Typer</h2>
+                    <p id="card-text-3">Projeto do Alura Typer, primeiros contatos que eu tive com jQuery. Achei bem interessante e também comecei a entender os métodos GET/POST</p>
+                    <div class="btn-div"><a href="https://github.com/severogit/alura-jQuery1" target="_blank" class="btn">Acessar</a></div>
+                </div>
+
+             </div>
+         </section>
+
+
+            <div class="btn-opacity"><i class="fas fa-envelope-square contact-button" id="contact-button"></i> <h2>Fale comigo!</h2></div>
+
+            <section id="contato-id" class="contato">
+                <div id="error" class="form-opacity"></div>
+            <form class="form form-opacity" id="form">
+                <div class="row">
+                    <input type="text" class="input" name="nome" placeholder="Nome" id="name">
+                </div>
+                <div class="row">
+                    <input type="text" class="input" name="email" placeholder="E-mail" id="email">
+                </div>
+                <div class="row">
+                    <input type="text" class="input" name="assunto" placeholder="Assunto" id="subject">
+                </div>
+                <div class="row">
+                    <textarea class="mensagem" name="mensagem" placeholder="Digite sua mensagem aqui..." id="content"></textarea>
+                </div>
+                <div class="row">
+                    <input type="submit" class="btn-form" name="enviar" value="Enviar" id="submit">
+                </div>
+            </form>
+
+
+        </section>
+         
+
+         <footer>
+            <h2>Obrigado por conferir meu Portfólio :)</h2> 
+         </footer>
+
+
+    </main>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/darkmode.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/tooltipster.bundle.min.js"></script>
+
+</body>
+</html>
