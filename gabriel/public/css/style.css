@@ -1,0 +1,336 @@
+html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  line-height: 1.5;
+}
+
+.landing-dark-mode {
+  background-color: #57565b;
+  background-image: url("../images/wallpapper.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  margin: 0;
+  width: auto;
+}
+
+.landing-light-mode {
+  background-image: url("../images/wallapper-inverted.jpg");
+  background-color: #a8a9a4;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  margin: 0;
+  width: auto;
+}
+
+.dark-pages {
+  background-color: #57565b;
+  height: 100%;
+  margin: 0;
+}
+
+.light-pages {
+  background-color: #a8a9a4;
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  height: 100%;
+}
+
+.bckg-box-dark {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 3px solid white;
+  color: white;
+  border-radius: 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.bckg-box-light {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 3px solid black;
+  color: black;
+  border-radius: 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.photo-dark {
+  max-width: 12rem;
+  border-radius: 100%;
+  border-color: white;
+  border-width: 5px;
+  border-style: solid;
+}
+
+.photo-light {
+  max-width: 12rem;
+  border-radius: 100%;
+  border-color: black;
+  border-width: 5px;
+  border-style: solid;
+}
+
+.content {
+  margin-top: 150px;
+  margin-bottom: 120px;
+}
+
+.presentation h3 {
+  font-size: 30px;
+}
+
+.presentation h2 {
+  font-size: 65px;
+  margin-top: -20px;
+}
+
+.presentation h4 {
+  margin-top: 25px;
+  letter-spacing: 0.5em;
+}
+
+.line {
+  width: 100%;
+  border-bottom: 2px solid;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+footer ul {
+  list-style-type: none;
+  display: inline !important;
+}
+
+footer li {
+  margin: 40px;
+  color: white;
+  float: left;
+}
+
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.effect {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: #212529;
+}
+
+.effect:hover {
+  color: #d1d1d1;
+}
+
+.about h2 {
+  text-align: left;
+  font-size: 4rem;
+}
+
+.about p {
+  text-align: left;
+  font-size: 1.5rem;
+}
+
+.techs {
+  text-align: left;
+}
+
+.dark-line-but-smaller {
+  width: 200px;
+  border-bottom: 1px solid white;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+.light-line-but-smaller {
+  width: 200px;
+  border-bottom: 1px solid black;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+.techs ul {
+  list-style: none;
+}
+
+.techs li {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.projects h2 {
+  text-align: left;
+}
+
+.accordion-dark {
+  background-color: #57565b;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 18px;
+  width: 80%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 30px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 5px;
+  border: 2px solid white;
+  margin-top: 3rem;
+}
+
+.active, .accordion-dark:hover {
+  background-color: #ccc;
+}
+
+.panel-dark {
+  padding: 0 18px;
+  width: 80%;
+  margin: auto;
+  display: none;
+  overflow: hidden;
+  text-align: left;
+  border: 2px solid white;
+}
+
+.panel-dark p {
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.accordion-light {
+  background-color: #a8a9a4;
+  color: black;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 18px;
+  width: 80%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 30px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 5px;
+  border: 2px solid black;
+  margin-top: 3rem;
+}
+
+.active, .accordion-light:hover {
+  background-color: #ccc;
+}
+
+.panel-light {
+  padding: 0 18px;
+  width: 80%;
+  margin: auto;
+  display: none;
+  overflow: hidden;
+  text-align: left;
+  border: 2px solid black;
+}
+
+.panel-light p {
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.page-buttons-dark {
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  color: #fff;
+  border: 3px solid white;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1;
+  font-size: 17px;
+  background-color: transparent;
+  padding: 10px;
+  outline: none;
+  border-radius: 4px;
+}
+
+.page-buttons-dark:hover {
+  color: #001F3F;
+  background-color: #fff;
+}
+
+.page-buttons-light {
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  color: black;
+  border: 3px solid black;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1;
+  font-size: 17px;
+  background-color: transparent;
+  padding: 10px;
+  outline: none;
+  border-radius: 4px;
+}
+
+.page-buttons-light:hover {
+  color: white;
+  background-color: black;
+}
+
+.recolor {
+  color: #57565b;
+}
+
+.about-photo {
+  height: auto;
+  width: auto;
+}
+
+.box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.box div {
+  margin: 0 auto;
+}
+
+.box ul {
+  margin: auto;
+}
+
+@media screen and (max-device-width: 480px) {
+  .box ul {
+    margin-left: 60px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

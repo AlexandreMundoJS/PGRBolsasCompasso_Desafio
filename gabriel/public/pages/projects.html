@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/jquery-ui.css">
+    <link rel="stylesheet" href="../css/jquery-ui.theme.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Projects</title>
+
+</head>
+
+<header>
+    <h1 style="display: none;">Projects</h1>
+    <div class="row">
+        <div class="col">
+            <button id="mode-button" class="btn btn-larger effect" href="./pages/links.html"> <i
+                    class="fa fa-moon-o fa-2x"></i><span id="modeCheck" style="display: none;">dark</span></button>
+        </div>
+    </div>
+</header>
+
+<body id="pages">
+    <section class="container content ">
+        <div id="box" class="projects">
+            <div class="row">
+                <div class="col-9 mb-4">
+                    <h2 class="mx-4 my-3">Projetos</h2>
+                    <div class="line"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col mb-5">
+                    <button id="accordion" class="accord">IjuiLib</button>
+                    <div class="panel">
+                        <h3 class="mt-3">Sobre</h3>
+                        <div class="small-line"></div>
+                        <p>Este projeto foi desenvolvido para a matéria de Desenvolvimento Web, onde a pauta consistia
+                            no desenvolvimento de uma aplicação web para a comunidade de Ijui, para isto,
+                            decidi desenvolver um website para que as pessoas possam anúnciar seus livros também,
+                            navegar pelo site visulizando os livros dos outros usuários e oferecer livros em troca. <br>
+                            O aplicativo consiste em um sebo online, onde o visitante podem ver os livros em anúncio,
+                            porém não podem interagir com estes mesmos. Usuários cadastrados podem fazer ofertras de
+                            troca.
+                            nos anúncios de outros usuários e também visualizar e responder as ofertas recebidas em seus
+                            proprios anúncios.
+                            <br>
+                            <br>
+                        </p>
+                        <h3>Tecnologias utilizadas:</h3>
+                        <p> - PHP com framework MVC e CRUD. <br>
+                            - JavaScript. <br>
+                            - Banco de dados SQL.<br><br>
+
+                            Video demonstrativo:</p>
+
+                        <div style="position: relative; padding-bottom: 54.53125%; height: 0;"><iframe
+                                src="https://www.loom.com/embed/39270989770f4b1f948bcc6f85551972" frameborder="0"
+                                webkitallowfullscreen mozallowfullscreen allowfullscreen
+                                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+                        <br><br>
+
+                        <div class="container">
+                            <div class="row justify-content-end">
+                                <div class=" col-5">
+                                    <a class="btn mx-auto btn-larger effect recolor" target="blank"
+                                        href="https://github.com/gabrielschirmer1903/ijuiLib" data-toggle="tooltip"
+                                        title="Home"><i class="fa  fa-github fa-4x"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <button id="accordion" class="accord">Sensor de temperatura - IoT</button>
+                    <div class="panel">
+                        <h3 class="mt-3">Sobre</h3>
+                        <div class="small-line"></div>
+                        <p>A seguinte simulação foi desenvolvida para realizar estudos sobre a arquitetura de sistemas
+                            IoT e as tecnologias utilizadas em aplicações. A implementação
+                            consiste em simular a leitura de um termometroa através de um script gerando números
+                            aleatórios e os enviando para o Broker MQTT em uma maquina virtual da Amazon. Outro
+                            script ficará escutando as publicações no broker, e as redicionará para um banco NOSQL, e a
+                            leitura desses dados armazenados é feita por uma página web.
+                            <br>
+                            <br>
+                        </p>
+                        <h3>Tecnologias utilizadas:</h3>
+                        <p> - JavaScript<br>
+                            - Broker Mosquitto <br>
+                            - Firebase (NOSQL)<br><br>
+
+                            <br>
+                            Script simulando coleta de dados de um sensor:
+                            <img class="my-5 img-fluid" src="../images/iot/termoscript.png"
+                                alt="Script simulando sensor"><br>
+                            Dados sendo armazenados no FireBase: <br>
+                            <img class="my-5 img-fluid" src="../images/iot/fb.png" alt="Dados no Firebase"><br>
+                            Dados sendo exibidos em pagina web: <br>
+                            <img class="my-5 img-fluid" src="../images/iot/sensor.png"
+                                alt="Página web com termometro img-fluid">
+                        </p>
+
+
+                        <br><br>
+
+                        <div class="container">
+                            <div class="row justify-content-end">
+                                <div class=" col-5">
+                                    <a class="btn mx-auto btn-larger effect recolor"
+                                        href="https://github.com/gabrielschirmer1903/IoT-simulator-MQTT-Firebase"
+                                        target="blank" data-toggle="tooltip" title="Home"><i
+                                            class="fa  fa-github fa-4x"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <button id="accordion" class="accord mb">Typer</button>
+                    <div class="panel">
+                        <h3 class="mt-3">Sobre</h3>
+                        <div class="small-line"></div>
+                        <p>Este jogo foi desenvolvido com o intuito de exercitar e fixar os aprendizados do curso de
+                            JQuery da Alura.
+                            <br>
+                            <br>
+                        </p>
+                        <h3>Tecnologias utilizadas:</h3>
+                        <p> - JavaScript com JQuery<br>
+                            - HTML e CSS<br>
+
+                            <br><br>
+
+                            Você pode experimentar o jogo, clicando <a id="btn" class="btn " href="./typer/index.html"
+                                target="blank">AQUI!</a>
+
+                            <br><br>
+                        <div class="container">
+                            <div class="row justify-content-end">
+                                <div class=" col-5">
+                                    <a class="btn mx-auto btn-larger effect recolor" href="index.html"
+                                        data-toggle="tooltip" title="Home"><i class="fa  fa-github fa-4x"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    </section>
+
+    <footer>
+        <nav class="">
+            <div class="box">
+                <ul>
+                    <li class="nav-item"><a class="btn btn-larger effect" href="landing.html" data-toggle="tooltip"
+                            title="Home"><i class="fa fa-home fa-2x"></i></a></li>
+                    <li class="nav-item"><a class="btn btn-larger effect" href="about.html"> <i
+                                class="fa fa-user-circle-o fa-2x"></i></a></li>
+                    <li class="nav-item"><a class="btn btn-larger effect" href="tech-page.html"> <i
+                                class="fa fa-code fa-2x"></i></a></li>
+                    <li class="nav-item"><a class="btn btn-larger effect" href="links.html"> <i
+                                class="fa fa-link fa-2x"></i></a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </footer>
+    
+
+</body>
+
+<script src="../js/jquery.js"></script>
+<script src="../js/jquery.cookie-1.4.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="../js/projects.js">
+</script>
+
+
+
+
+
+</html>
