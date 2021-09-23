@@ -1,0 +1,193 @@
+html {
+    --background: #FCFCFC;
+    --cortitulo: #000000;
+    --cortexto: #333333;
+    --header: #000000;
+}
+
+body {
+    background-color: var(--background);
+}
+
+header {
+    background: var(--header);
+}
+
+.imagem {
+    border-color: rgb(0, 0, 0);
+    border-width: 0;
+    border-style: solid;
+    border-radius: 180px;
+    padding: 15px;
+}
+
+.box {
+    text-align: center;
+}
+
+.botao input[type=checkbox] {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+
+.botao label {
+	cursor: pointer;
+	text-indent: -9999px;
+	width: 52px;
+	height: 27px;
+	background: grey;
+	float: right;
+	border-radius: 100px;
+	position: relative;
+}
+
+.botao label:after {
+	content: '';
+	position: absolute;
+	top: 3px;
+	left: 3px;
+	width: 20px;
+	height: 20px;
+	background: #fff;
+	border-radius: 90px;
+	transition: 0.3s;
+}
+
+.botao input:checked + label {
+    background: var(--background);
+}
+
+.botao input:checked + label:after {
+    left: calc(100% - 5px);
+    transform: translateX(-100%);
+}
+
+.botao label:active:active {
+    width: 45px;
+}
+
+body p {
+    color: var(--cortexto);
+}
+
+body h2 {
+    color: var(--cortitulo);
+}
+
+
+nav {
+    text-align: center;
+    padding: 15px;
+   
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 20px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: gold;
+    font-size: 28px;
+}
+
+nav a:active {
+    color: darkgoldenrod;
+}
+
+.conteudo {
+    width: 600px;
+    margin: 50px auto;
+    border: 1px solid #000000;
+}
+
+.itens input {
+    display: none;
+
+}
+
+.itens label {
+    display: block;
+    border: 1px solid #000000;
+    background: #cccccc;
+    cursor: pointer;
+    padding: 5px 3px;
+}
+
+.texto-princial {
+    text-align: center;
+    font-size: 40px;
+    color: var(--cortexto);
+}
+
+.texto-princial p {
+    margin-top: 60px;
+}
+
+.texto-princial h1 {
+    margin-top: 30px;
+    font-size: 60px;
+}
+
+.texto-princial h2 {
+    margin-top: 30px;
+}
+
+.conteudo {
+    border: 5px solid;
+    border-color: var(--header);
+
+}
+
+.accordion-conteudo {
+    height: 0;
+    overflow: hidden;
+    -webkit-transition: height 0.3s ease-in-out;
+    -moz-transition: height 0.3s ease-in-out;
+    -o-transition: height 0.3s ease-in-out;
+    -ms-transition: height 0.3s ease-in-out;
+    transition: height 0.3s ease-in-out;
+    font-size: 35px;
+    color: var(--cortexto);
+}
+
+
+#accordion-a:checked ~ .accordion-conteudo {
+    height: 100px;
+}
+
+#accordion-b:checked ~ .accordion-conteudo {
+    height: 100px;
+}
+
+#accordion-c:checked ~ .accordion-conteudo {
+    height: 100px;
+}
+
+main label {
+    font-size: 40px;
+}
+
+footer {
+    text-align: center;
+    background: url(rodape.jpg);
+}
+
+footer p {
+    padding: 125px 0 0 0;
+    color: darkgray;
+}
+
+@media screen and (max-width:480px) {
+    .box, .texto-princial, .conteudo {
+        width: auto;
+    }
+}
